@@ -1,0 +1,206 @@
+{
+  "name": "Daily Crawling - Beautyculry Reviews",
+  "description": "매일 자정에 뷰티컬리 리뷰 수집 및 감정 분석",
+  "nodes": [
+    {
+      "id": "1",
+      "type": "n8n-nodes-base.trigger",
+      "position": [250, 300],
+      "parameters": {
+        "triggerType": "schedule",
+        "interval": "days",
+        "daysInterval": 1,
+        "triggerAtHour": 0,
+        "triggerAtMinute": 0
+      },
+      "name": "Schedule Trigger"
+    },
+    {
+      "id": "2",
+      "type": "n8n-nodes-base.postgres",
+      "position": [450, 300],
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "SELECT product_number FROM products ORDER BY product_number LIMIT 100;"
+      },
+      "name": "Get Product List"
+    },
+    {
+      "id": "3",
+      "type": "n8n-nodes-base.itemLists",
+      "position": [650, 300],
+      "parameters": {
+        "operation": "splitOutItems",
+        "fieldToSplitOut": "product_number"
+      },
+      "name": "Loop Over Products"
+    },
+    {
+      "id": "4",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [850, 300],
+      "parameters": {
+        "method": "GET",
+        "url": "https://api.kurly.com/v2/reviews/products/{{$json.product_number}}",
+        "responseFormat": "json"
+      },
+      "name": "HTTP Request - Fetch Reviews"
+    },
+    {
+      "id": "5",
+      "type": "n8n-nodes-base.code",
+      "position": [1050, 300],
+      "parameters": {
+        "language": "javascript",
+        "mode": "runOnceForAllItems",
+        "jsCode": "const allReviews = [];\nfor (const item of items) {\n  const reviews = item.json.data || [];\n  for (const review of reviews) {\n    allReviews.push({\n      json: {\n        product_number: item.json.product_number,\n        content: review.content,\n        registered_at: review.created_at,\n        like_count: review.like_count || 0\n      }\n    });\n  }\n}\nreturn allReviews;"
+      },
+      "name": "Extract Reviews"
+    },
+    {
+      "id": "6",
+      "type": "n8n-nodes-base.postgres",
+      "position": [1250, 300],
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "SELECT COUNT(*) as exists FROM reviews WHERE product_number = '{{$json.product_number}}' AND content = '{{$json.content}}' AND registered_at = '{{$json.registered_at}}';"
+      },
+      "name": "Check Duplicates"
+    },
+    {
+      "id": "7",
+      "type": "n8n-nodes-base.if",
+      "position": [1450, 300],
+      "parameters": {
+        "conditions": {
+          "boolean": [
+            {
+              "value1": "={{$json.exists}}",
+              "operation": "equal",
+              "value2": "0"
+            }
+          ]
+        }
+      },
+      "name": "Filter New Reviews"
+    },
+    {
+      "id": "8",
+      "type": "n8n-nodes-base.openai",
+      "position": [1650, 200],
+      "parameters": {
+        "resource": "chat",
+        "model": "gpt-4o-mini",
+        "messages": {
+          "messageUiValues": [
+            {
+              "role": "system",
+              "content": "당신은 화장품 리뷰 감정 분석 전문가입니다.\n\n다음 리뷰를 1-5점으로 평가하세요:\n1점: 매우 불만족\n2점: 불만족\n3점: 보통\n4점: 만족\n5점: 매우 만족\n\n반드시 JSON 형식으로만 출력:\n{\"score\": X, \"reason\": \"평가 근거\"}"
+            },
+            {
+              "role": "user",
+              "content": "리뷰: {{$json.content}}"
+            }
+          ]
+        },
+        "temperature": 0.3,
+        "responseFormat": "json"
+      },
+      "name": "Sentiment Analysis"
+    },
+    {
+      "id": "9",
+      "type": "n8n-nodes-base.code",
+      "position": [1850, 200],
+      "parameters": {
+        "language": "javascript",
+        "jsCode": "const response = JSON.parse(items[0].json.message.content);\nreturn [{\n  json: {\n    ...items[0].json,\n    sentiment_score: response.score,\n    sentiment_reason: response.reason\n  }\n}];"
+      },
+      "name": "Parse JSON Response"
+    },
+    {
+      "id": "10",
+      "type": "n8n-nodes-base.openai",
+      "position": [2050, 200],
+      "parameters": {
+        "resource": "embedding",
+        "model": "text-embedding-3-small",
+        "text": "={{$json.content}}"
+      },
+      "name": "Generate Embedding"
+    },
+    {
+      "id": "11",
+      "type": "n8n-nodes-base.postgres",
+      "position": [2250, 200],
+      "parameters": {
+        "operation": "insert",
+        "table": "reviews",
+        "columns": [
+          "product_number",
+          "content",
+          "registered_at",
+          "like_count",
+          "sentiment_score",
+          "sentiment_reason"
+        ],
+        "values": {
+          "product_number": "={{$json.product_number}}",
+          "content": "={{$json.content}}",
+          "registered_at": "={{$json.registered_at}}",
+          "like_count": "={{$json.like_count}}",
+          "sentiment_score": "={{$json.sentiment_score}}",
+          "sentiment_reason": "={{$json.sentiment_reason}}"
+        }
+      },
+      "name": "Save to PostgreSQL"
+    },
+    {
+      "id": "12",
+      "type": "n8n-nodes-base.slack",
+      "position": [2450, 200],
+      "parameters": {
+        "operation": "post",
+        "channelId": "#beauty-agent-logs",
+        "text": "✅ 크롤링 완료!\\n- 수집 리뷰 수: {{$json.count}}\\n- 실행 시간: {{$workflow.startTime}}\\n- 다음 실행: 내일 자정"
+      },
+      "name": "Slack Notification"
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [[{"node": "2", "type": "main", "index": 0}]]
+    },
+    "2": {
+      "main": [[{"node": "3", "type": "main", "index": 0}]]
+    },
+    "3": {
+      "main": [[{"node": "4", "type": "main", "index": 0}]]
+    },
+    "4": {
+      "main": [[{"node": "5", "type": "main", "index": 0}]]
+    },
+    "5": {
+      "main": [[{"node": "6", "type": "main", "index": 0}]]
+    },
+    "6": {
+      "main": [[{"node": "7", "type": "main", "index": 0}]]
+    },
+    "7": {
+      "main": [[{"node": "8", "type": "main", "index": 0}]]
+    },
+    "8": {
+      "main": [[{"node": "9", "type": "main", "index": 0}]]
+    },
+    "9": {
+      "main": [[{"node": "10", "type": "main", "index": 0}]]
+    },
+    "10": {
+      "main": [[{"node": "11", "type": "main", "index": 0}]]
+    },
+    "11": {
+      "main": [[{"node": "12", "type": "main", "index": 0}]]
+    }
+  },
+  "active": false
+}

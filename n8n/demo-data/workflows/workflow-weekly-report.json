@@ -1,0 +1,89 @@
+{
+  "name": "Weekly Report - Beauty Agent Insights",
+  "description": "매주 월요일 9시에 주간 통계 리포트 생성 및 전송",
+  "nodes": [
+    {
+      "id": "1",
+      "type": "n8n-nodes-base.trigger",
+      "position": [250, 300],
+      "parameters": {
+        "triggerType": "schedule",
+        "interval": "weeks",
+        "weeksInterval": 1,
+        "triggerAtDayOfWeek": "monday",
+        "triggerAtHour": 9,
+        "triggerAtMinute": 0
+      },
+      "name": "Schedule Trigger"
+    },
+    {
+      "id": "2",
+      "type": "n8n-nodes-base.postgres",
+      "position": [450, 300],
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "SELECT COUNT(*) as new_reviews, AVG(sentiment_score) as avg_sentiment, COUNT(DISTINCT product_number) as products_reviewed FROM reviews WHERE created_at >= NOW() - INTERVAL '7 days';"
+      },
+      "name": "Generate Weekly Stats"
+    },
+    {
+      "id": "3",
+      "type": "n8n-nodes-base.postgres",
+      "position": [650, 300],
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "SELECT p.name, COUNT(r.id) as review_count, AVG(r.sentiment_score) as avg_score, MAX(r.registered_at) as latest_review FROM reviews r JOIN products p ON r.product_number = p.product_number WHERE r.created_at >= NOW() - INTERVAL '7 days' GROUP BY p.product_number, p.name ORDER BY review_count DESC LIMIT 5;"
+      },
+      "name": "Top Products This Week"
+    },
+    {
+      "id": "4",
+      "type": "n8n-nodes-base.openai",
+      "position": [850, 300],
+      "parameters": {
+        "resource": "chat",
+        "model": "gpt-4o-mini",
+        "messages": {
+          "messageUiValues": [
+            {
+              "role": "system",
+              "content": "당신은 뷰티 산업 분석가입니다.\n다음 주간 통계를 바탕으로 인사이트를 생성하세요.\n\n3-5개의 핵심 인사이트를 markdown 형식으로 제시하세요.\n실제 숫자와 트렌드를 바탕으로 작성하세요."
+            },
+            {
+              "role": "user",
+              "content": "주간 신규 리뷰: {{$json.new_reviews}}\n평균 감정점수: {{$json.avg_sentiment}}\n리뷰된 제품 수: {{$json.products_reviewed}}\n\nTop 5 제품:\n{{$json.topProducts}}"
+            }
+          ]
+        },
+        "temperature": 0.7
+      },
+      "name": "LLM Insights"
+    },
+    {
+      "id": "5",
+      "type": "n8n-nodes-base.slack",
+      "position": [1050, 300],
+      "parameters": {
+        "operation": "post",
+        "channelId": "#beauty-agent-logs",
+        "text": "📊 주간 리포트 - {{$now}}\n\n✨ 핵심 인사이트:\n{{$json.message.content}}\n\n📈 통계:\n- 신규 리뷰: {{$json.new_reviews}}개\n- 평균 감정점수: {{$json.avg_sentiment}} / 5\n- 리뷰된 제품: {{$json.products_reviewed}}개"
+      },
+      "name": "Slack Report"
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [[{"node": "2", "type": "main", "index": 0}]]
+    },
+    "2": {
+      "main": [[{"node": "3", "type": "main", "index": 0}]]
+    },
+    "3": {
+      "main": [[{"node": "4", "type": "main", "index": 0}]]
+    },
+    "4": {
+      "main": [[{"node": "5", "type": "main", "index": 0}]]
+    }
+  },
+  "active": false
+}

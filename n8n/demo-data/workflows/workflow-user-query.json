@@ -1,0 +1,172 @@
+{
+  "name": "User Query - Shopping Agent",
+  "description": "사용자의 쿼리를 받아 멀티 에이전트로 분석 및 답변 생성",
+  "nodes": [
+    {
+      "id": "1",
+      "type": "n8n-nodes-base.webhook",
+      "position": [250, 300],
+      "parameters": {
+        "path": "ask",
+        "httpMethod": "POST",
+        "responseMode": "lastNode",
+        "expectedBodyJSON": {
+          "query": "건조한 피부에 좋은 토너 추천해줘",
+          "user_id": "user123"
+        }
+      },
+      "name": "Webhook"
+    },
+    {
+      "id": "2",
+      "type": "n8n-nodes-base.openai",
+      "position": [450, 300],
+      "parameters": {
+        "resource": "chat",
+        "model": "gpt-4o-mini",
+        "messages": {
+          "messageUiValues": [
+            {
+              "role": "system",
+              "content": "당신은 쿼리 분석 전문가입니다.\n사용자의 질문을 분석하여 다음 정보를 추출하세요:\n\n1. intent: 의도 (추천, 비교, 리뷰 요약 등)\n2. keywords: 핵심 키워드 배열 (최대 3개)\n3. filters: 필터 조건 (피부 타입, 가격대 등)\n\nJSON 형식으로 출력:\n{\"intent\": \"추천\", \"keywords\": [\"키워드1\", \"키워드2\"], \"filters\": {\"skin_type\": \"건성\"}}"
+            },
+            {
+              "role": "user",
+              "content": "{{$json.query}}"
+            }
+          ]
+        },
+        "temperature": 0.3,
+        "responseFormat": "json"
+      },
+      "name": "Parse User Intent"
+    },
+    {
+      "id": "3",
+      "type": "n8n-nodes-base.postgres",
+      "position": [650, 300],
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "SELECT r.*, p.name, p.price FROM reviews r JOIN products p ON r.product_number = p.product_number WHERE r.sentiment_score >= 4 ORDER BY r.like_count DESC, r.registered_at DESC LIMIT 20;"
+      },
+      "name": "Keyword Search"
+    },
+    {
+      "id": "4",
+      "type": "n8n-nodes-base.code",
+      "position": [850, 300],
+      "parameters": {
+        "language": "javascript",
+        "jsCode": "// OpenAI embedding 결과를 받아서 원본 쿼리와 함께 전달\nconst embedding = items[0].json.data[0].embedding;\n\nreturn [{\n  json: {\n    ...items[0].json,\n    data: embedding,\n    originalQuery: items[0].json.query || ''\n  }\n}];"
+      },
+      "name": "Generate Query Embedding"
+    },
+    {
+      "id": "5",
+      "type": "n8n-nodes-base.httpRequest",
+      "position": [1050, 300],
+      "parameters": {
+        "method": "POST",
+        "url": "http://qdrant:6333/collections/beauty_reviews/points/search",
+        "body": "{\n  \"vector\": {{$json.data}},\n  \"limit\": 20,\n  \"with_payload\": true,\n  \"score_threshold\": 0.7\n}",
+        "contentType": "application/json"
+      },
+      "name": "Vector Search"
+    },
+    {
+      "id": "6",
+      "type": "n8n-nodes-base.code",
+      "position": [1250, 300],
+      "parameters": {
+        "language": "javascript",
+        "mode": "runOnceForAllItems",
+        "jsCode": "// Node 3: Keyword Search results\nconst keywordResults = items[0].json || [];\n\n// Node 5: Vector Search results\nconst vectorResults = items[1].json.result || [];\n\nconst merged = {};\n\n// 벡터 검색 결과 (가중치 0.7)\nvectorResults.forEach(item => {\n  const id = `vec_${item.id}`;\n  merged[id] = {\n    ...item.payload,\n    source: 'vector',\n    score: item.score * 0.7\n  };\n});\n\n// 키워드 검색 결과 (가중치 0.3)\nkeywordResults.forEach((item, idx) => {\n  const id = `kw_${item.id || idx}`;\n  const keywordScore = Math.max(0, (20 - idx) / 20) * 0.3;\n  \n  if (merged[id]) {\n    merged[id].score += keywordScore;\n  } else {\n    merged[id] = {\n      ...item,\n      source: 'keyword',\n      score: keywordScore\n    };\n  }\n});\n\n// 점수 순 정렬 후 Top 10\nconst sorted = Object.values(merged)\n  .sort((a, b) => b.score - a.score)\n  .slice(0, 10);\n\n// 리뷰 목록 병합\nconst reviews = sorted.map(item => `[${item.source}] ${item.content} (점수: ${item.sentiment_score}/5)`).join('\\\\n');\n\nreturn [{\n  json: {\n    reviews: reviews,\n    review_count: sorted.length,\n    avg_score: sorted.reduce((sum, item) => sum + (item.sentiment_score || 0), 0) / sorted.length,\n    top_results: sorted\n  }\n}];"
+      },
+      "name": "Merge Results"
+    },
+    {
+      "id": "7",
+      "type": "n8n-nodes-base.openai",
+      "position": [1450, 300],
+      "parameters": {
+        "resource": "chat",
+        "model": "gpt-4o-mini",
+        "messages": {
+          "messageUiValues": [
+            {
+              "role": "system",
+              "content": "다음 리뷰들을 기반으로 제품 속성별 감정을 분석하세요.\n\n주요 속성: 보습력, 흡수력, 끈적임, 향, 피부 자극, 가성비\n\n각 속성에 대해:\n1. 점수 (1-5)\n2. 긍정 리뷰 개수\n3. 부정 리뷰 개수\n4. 대표 리뷰 인용\n\n반드시 JSON 형식으로 출력:\n{\"attributes\": [{\"name\": \"속성명\", \"score\": 4, \"positive\": 5, \"negative\": 1, \"example\": \"리뷰 텍스트\"}]}"
+            },
+            {
+              "role": "user",
+              "content": "리뷰 목록:\\n{{$json.reviews}}\n\n평균 점수: {{$json.avg_score}}"
+            }
+          ]
+        },
+        "temperature": 0.3,
+        "responseFormat": "json"
+      },
+      "name": "ABSA Analysis"
+    },
+    {
+      "id": "8",
+      "type": "n8n-nodes-base.openai",
+      "position": [1650, 300],
+      "parameters": {
+        "resource": "chat",
+        "model": "gpt-4o",
+        "messages": {
+          "messageUiValues": [
+            {
+              "role": "system",
+              "content": "당신은 10년 경력의 전직 뷰티 MD입니다.\n솔직하고 근거 있는 조언을 제공하세요.\n\n답변 구조:\n1. 🎯 3줄 요약\n2. 📊 장단점 (긍정/부정 리뷰 개수 포함)\n3. ⚠️ 광고 vs 실제 차이\n4. ✅/❌ 최종 판단 (추천/비추천)\n\n근거는 반드시 통계와 리뷰 인용으로 뒷받침하세요."
+            },
+            {
+              "role": "user",
+              "content": "사용자 질문: {{$json.originalQuery}}\n\n수집된 리뷰 수: {{$json.review_count}}개\n평균 평점: {{$json.avg_score}}/5\n\nABSA 분석:\\n{{$json.message.content}}"
+            }
+          ]
+        },
+        "temperature": 0.7
+      },
+      "name": "Generate Answer"
+    },
+    {
+      "id": "9",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "position": [1850, 300],
+      "parameters": {
+        "responseData": "firstEntryJson",
+        "responseBody": "{\"success\": true, \"answer\": \"{{$json.message.content}}\", \"metadata\": {\"reviews_analyzed\": \"{{$json.review_count}}\", \"avg_score\": \"{{$json.avg_score}}\", \"generated_at\": \"{{$now}}\"}}"
+      },
+      "name": "Respond to Webhook"
+    }
+  ],
+  "connections": {
+    "1": {
+      "main": [[{"node": "2", "type": "main", "index": 0}]]
+    },
+    "2": {
+      "main": [[{"node": "3", "type": "main", "index": 0}], [{"node": "4", "type": "main", "index": 0}]]
+    },
+    "3": {
+      "main": [[{"node": "6", "type": "main", "index": 0}]]
+    },
+    "4": {
+      "main": [[{"node": "5", "type": "main", "index": 0}]]
+    },
+    "5": {
+      "main": [[{"node": "6", "type": "main", "index": 0}]]
+    },
+    "6": {
+      "main": [[{"node": "7", "type": "main", "index": 0}]]
+    },
+    "7": {
+      "main": [[{"node": "8", "type": "main", "index": 0}]]
+    },
+    "8": {
+      "main": [[{"node": "9", "type": "main", "index": 0}]]
+    }
+  },
+  "active": false
+}

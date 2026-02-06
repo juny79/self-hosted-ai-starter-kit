@@ -1,0 +1,986 @@
+{
+  "name": "Beauty Kurly Shopping Agent - Complete Workflow",
+  "description": "뷰티컬리 쇼핑 에이전트 자동화 워크플로우 - 리뷰 수집, 분석, 사용자 질의 응답",
+  "nodes": [
+    {
+      "id": "trigger_1",
+      "name": "Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1,
+      "position": [250, 300],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 24,
+              "triggerAtHour": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "webhook_1",
+      "name": "User Query Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [250, 600],
+      "parameters": {
+        "path": "beauty-query",
+        "httpMethod": "POST",
+        "responseMode": "lastNode",
+        "options": {
+          "rawBody": false
+        }
+      },
+      "webhookId": "beauty-kurly-agent"
+    },
+    {
+      "id": "postgres_1",
+      "name": "Get Product List",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.4,
+      "position": [450, 300],
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "SELECT product_number, name, category FROM products WHERE category LIKE '%beauty%' ORDER BY updated_at DESC LIMIT 10;"
+      },
+      "credentials": {
+        "postgres": {
+          "id": "1",
+          "name": "PostgreSQL account"
+        }
+      }
+    },
+    {
+      "id": "split_1",
+      "name": "Split Products",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 1,
+      "position": [650, 300],
+      "parameters": {
+        "batchSize": 5,
+        "options": {}
+      }
+    },
+    {
+      "id": "http_1",
+      "name": "Fetch Kurly Reviews",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [850, 300],
+      "parameters": {
+        "method": "GET",
+        "url": "=https://api.kurly.com/v2/reviews/products/{{ $json.product_number }}",
+        "authentication": "none",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "User-Agent",
+              "value": "Mozilla/5.0"
+            },
+            {
+              "name": "Accept",
+              "value": "application/json"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 10000,
+          "redirect": {
+            "redirect": {
+              "followRedirects": true
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "code_1",
+      "name": "Extract Review Data",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [1050, 300],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// 리뷰 데이터 추출 및 정규화\nconst extractedReviews = [];\n\nfor (const item of items) {\n  const productNumber = item.json.product_number;\n  const reviews = item.json.data?.reviews || [];\n  \n  for (const review of reviews) {\n    extractedReviews.push({\n      json: {\n        product_number: productNumber,\n        review_id: review.id,\n        content: review.content || review.comment,\n        rating: review.rating || review.score,\n        created_at: review.created_at || review.registered_at,\n        author: review.author?.name || 'Anonymous',\n        like_count: review.like_count || 0,\n        verified_purchase: review.verified_purchase || false,\n        skin_type: review.attributes?.skin_type || null,\n        age_group: review.attributes?.age_group || null\n      }\n    });\n  }\n}\n\nreturn extractedReviews;"
+      }
+    },
+    {
+      "id": "postgres_2",
+      "name": "Check Existing Reviews",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.4,
+      "position": [1250, 300],
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "=SELECT COUNT(*) as count FROM beauty_reviews WHERE review_id = '{{ $json.review_id }}' LIMIT 1;"
+      },
+      "credentials": {
+        "postgres": {
+          "id": "1",
+          "name": "PostgreSQL account"
+        }
+      }
+    },
+    {
+      "id": "if_1",
+      "name": "Filter New Reviews",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 1,
+      "position": [1450, 300],
+      "parameters": {
+        "conditions": {
+          "number": [
+            {
+              "value1": "={{ $json.count }}",
+              "operation": "equal",
+              "value2": 0
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "openai_1",
+      "name": "Sentiment Analysis",
+      "type": "n8n-nodes-base.openAi",
+      "typeVersion": 1,
+      "position": [1650, 200],
+      "parameters": {
+        "resource": "chat",
+        "model": "solar-pro",
+        "options": {
+          "temperature": 0.3,
+          "responseFormat": "json_object",
+          "baseURL": "https://api.upstage.ai/v1/solar"
+        },
+        "messages": {
+          "values": [
+            {
+              "role": "system",
+              "content": "당신은 화장품 리뷰의 감성을 분석하는 전문가입니다.\n\n## 평가 기준:\n- **5점 (Very satisfied)**: 매우 만족, 극찬, 재구매 의사 강함, 강력 추천\n- **4점 (Satisfied)**: 만족, 좋음, 긍정적 평가가 많음\n- **3점 (Neutral)**: 보통, 중립적, 장단점 혼재, 판단 보류\n- **2점 (Dissatisfied)**: 불만족, 기대 이하, 부정적 평가\n- **1점 (Very dissatisfied)**: 매우 불만족, 강한 불만, 피부 트러블, 사용 중단\n\n## Few-Shot Examples:\n5점: \"재재재재구매 너무 좋아요\", \"달바는 진리입니다\", \"몇년째 쓰는 꿀템이에요\"\n4점: \"괜찮네요\", \"향도 좋고 촉촉하니 좋아요\", \"다쓰면 또 구매의향 있어요\"\n3점: \"더 써봐야알거 같아요\", \"생각보다 그냥 쏘쏘에요\"\n2점: \"향이 강해서 저는 별로\", \"기대만큼은 아니에요\"\n1점: \"피부 붉어지고 알러지 반응\", \"눈시림이 심하네요\", \"못쓰게되서 속상\"\n\n리뷰를 분석하여 JSON 형식으로 출력하세요:\n{\n  \"sentiment_score\": 1-5,\n  \"sentiment_label\": \"Very satisfied\" | \"Satisfied\" | \"Neutral\" | \"Dissatisfied\" | \"Very dissatisfied\",\n  \"emotions\": [\"기쁨\", \"실망\"] 등 감지된 감정 리스트,\n  \"key_points\": [\"보습력 좋음\", \"끈적임\"] 등 핵심 포인트\n}"
+            },
+            {
+              "role": "user",
+              "content": "=리뷰 평점: {{ $json.rating }}/5\n리뷰 내용: {{ $json.content }}"
+            }
+          ]
+        }
+      },
+      "credentials": {
+        "openAiApi": {
+          "id": "2",
+          "name": "Upstage Solar API"
+        }
+      }
+    },
+    {
+      "id": "code_sentiment",
+      "name": "Parse Sentiment Result",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1850, 200],
+      "parameters": {
+        "jsCode": "// Sentiment Analysis 결과 파싱 및 원본 데이터와 병합\nconst item = items[0].json;\n\n// AI 분석 결과 파싱\nlet sentimentResult = {};\ntry {\n  sentimentResult = JSON.parse(item.message?.content || '{}');\n} catch (e) {\n  console.error('Sentiment parsing error:', e);\n  sentimentResult = {\n    sentiment_score: 3,\n    sentiment_label: '중립',\n    emotions: [],\n    key_points: []\n  };\n}\n\n// 원본 리뷰 데이터와 병합\nreturn [{\n  json: {\n    // 원본 데이터 유지\n    review_id: $('Filter New Reviews').item.json.review_id,\n    product_number: $('Filter New Reviews').item.json.product_number,\n    content: $('Filter New Reviews').item.json.content,\n    rating: $('Filter New Reviews').item.json.rating,\n    created_at: $('Filter New Reviews').item.json.created_at,\n    author: $('Filter New Reviews').item.json.author,\n    like_count: $('Filter New Reviews').item.json.like_count,\n    verified_purchase: $('Filter New Reviews').item.json.verified_purchase,\n    skin_type: $('Filter New Reviews').item.json.skin_type,\n    age_group: $('Filter New Reviews').item.json.age_group,\n    \n    // Sentiment 결과 추가\n    sentiment_score: sentimentResult.sentiment_score,\n    sentiment_label: sentimentResult.sentiment_label,\n    emotions: JSON.stringify(sentimentResult.emotions || []),\n    key_points: JSON.stringify(sentimentResult.key_points || [])\n  }\n}];"
+      }
+    },
+    {
+      "id": "openai_2",
+      "name": "ABSA Analysis",
+      "type": "n8n-nodes-base.openAi",
+      "typeVersion": 1,
+      "position": [2050, 200],
+      "parameters": {
+        "resource": "chat",
+        "model": "solar-pro",
+        "options": {
+          "temperature": 0.2,
+          "responseFormat": "json_object",
+          "baseURL": "https://api.upstage.ai/v1/solar"
+        },
+        "messages": {
+          "values": [
+            {
+              "role": "system",
+              "content": "Aspect-Based Sentiment Analysis (ABSA) 전문가입니다.\n\n화장품 리뷰에서 다음 속성별 감정을 추출하세요:\n- 보습력 (hydration)\n- 흡수력 (absorption)\n- 끈적임 (stickiness)\n- 향 (fragrance)\n- 자극성 (irritation)\n- 가성비 (value)\n- 효과 (effectiveness)\n\nJSON 형식:\n{\n  \"aspects\": [\n    {\n      \"name\": \"보습력\",\n      \"sentiment\": \"긍정\" | \"중립\" | \"부정\",\n      \"score\": 1-5,\n      \"mentioned\": true,\n      \"quote\": \"관련 리뷰 인용문\"\n    }\n  ]\n}"
+            },
+            {
+              "role": "user",
+              "content": "={{ $json.content }}"
+            }
+          ]
+        }
+      },
+      "credentials": {
+        "openAiApi": {
+          "id": "2",
+          "name": "Upstage Solar API"
+        }
+      }
+    },
+    {
+      "id": "code_absa",
+      "name": "Parse ABSA Result",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2250, 200],
+      "parameters": {
+        "jsCode": "// ABSA 결과 파싱 및 병합\nconst item = items[0].json;\n\n// ABSA 결과 파싱\nlet absaResult = {};\ntry {\n  absaResult = JSON.parse(item.message?.content || '{}');\n} catch (e) {\n  console.error('ABSA parsing error:', e);\n  absaResult = { aspects: [] };\n}\n\n// 이전 Parse Sentiment Result의 모든 데이터 + ABSA 결과\nreturn [{\n  json: {\n    // Parse Sentiment Result에서 온 데이터\n    review_id: $('Parse Sentiment Result').item.json.review_id,\n    product_number: $('Parse Sentiment Result').item.json.product_number,\n    content: $('Parse Sentiment Result').item.json.content,\n    rating: $('Parse Sentiment Result').item.json.rating,\n    created_at: $('Parse Sentiment Result').item.json.created_at,\n    author: $('Parse Sentiment Result').item.json.author,\n    like_count: $('Parse Sentiment Result').item.json.like_count,\n    verified_purchase: $('Parse Sentiment Result').item.json.verified_purchase,\n    skin_type: $('Parse Sentiment Result').item.json.skin_type,\n    age_group: $('Parse Sentiment Result').item.json.age_group,\n    sentiment_score: $('Parse Sentiment Result').item.json.sentiment_score,\n    sentiment_label: $('Parse Sentiment Result').item.json.sentiment_label,\n    emotions: $('Parse Sentiment Result').item.json.emotions,\n    key_points: $('Parse Sentiment Result').item.json.key_points,\n    \n    // ABSA 결과 추가\n    absa_aspects: JSON.stringify(absaResult.aspects || [])\n  }\n}];"
+      }
+    },
+    {
+      "id": "openai_3",
+      "name": "Generate Embedding",
+      "type": "n8n-nodes-base.openAi",
+      "typeVersion": 1,
+      "position": [2450, 200],
+      "parameters": {
+        "resource": "embedding",
+        "model": "text-embedding-3-small",
+        "text": "={{ $json.content }}"
+      },
+      "credentials": {
+        "openAiApi": {
+          "id": "2",
+          "name": "OpenAI account"
+        }
+      }
+    },
+    {
+      "id": "code_2",
+      "name": "Prepare Review Data",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2650, 200],
+      "parameters": {
+        "jsCode": "// 최종 리뷰 데이터 준비 (Parse ABSA Result + Embedding)\nconst absaData = $('Parse ABSA Result').item.json;\nconst embeddingData = items[0].json;\n\n// 임베딩 벡터 추출\nconst embedding = embeddingData.data?.[0]?.embedding || [];\n\nreturn [{\n  json: {\n    // Parse ABSA Result의 모든 데이터\n    review_id: absaData.review_id,\n    product_number: absaData.product_number,\n    content: absaData.content,\n    rating: absaData.rating,\n    created_at: absaData.created_at,\n    author: absaData.author,\n    like_count: absaData.like_count,\n    verified_purchase: absaData.verified_purchase,\n    skin_type: absaData.skin_type,\n    age_group: absaData.age_group,\n    sentiment_score: absaData.sentiment_score,\n    sentiment_label: absaData.sentiment_label,\n    emotions: absaData.emotions,\n    key_points: absaData.key_points,\n    absa_aspects: absaData.absa_aspects,\n    \n    // 임베딩 추가\n    embedding: JSON.stringify(embedding),\n    \n    processed_at: new Date().toISOString()\n  }\n}];"
+      }
+    },
+    {
+      "id": "postgres_3",
+      "name": "Save to PostgreSQL",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.4,
+      "position": [2850, 200],
+      "parameters": {
+        "operation": "insert",
+        "schema": {
+          "__rl": true,
+          "value": "public",
+          "mode": "list"
+        },
+        "table": {
+          "__rl": true,
+          "value": "beauty_reviews",
+          "mode": "list"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "review_id": "={{ $json.review_id }}",
+            "product_number": "={{ $json.product_number }}",
+            "content": "={{ $json.content }}",
+            "rating": "={{ $json.rating }}",
+            "created_at": "={{ $json.created_at }}",
+            "author": "={{ $json.author }}",
+            "like_count": "={{ $json.like_count }}",
+            "verified_purchase": "={{ $json.verified_purchase }}",
+            "skin_type": "={{ $json.skin_type }}",
+            "age_group": "={{ $json.age_group }}",
+            "sentiment_score": "={{ $json.sentiment_score }}",
+            "sentiment_label": "={{ $json.sentiment_label }}",
+            "emotions": "={{ $json.emotions }}",
+            "key_points": "={{ $json.key_points }}",
+            "absa_aspects": "={{ $json.absa_aspects }}",
+            "processed_at": "={{ $json.processed_at }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "review_id",
+              "displayName": "review_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "product_number",
+              "displayName": "product_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "content",
+              "displayName": "content",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "rating",
+              "displayName": "rating",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "created_at",
+              "displayName": "created_at",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "dateTime",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "author",
+              "displayName": "author",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "like_count",
+              "displayName": "like_count",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "verified_purchase",
+              "displayName": "verified_purchase",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "boolean",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "skin_type",
+              "displayName": "skin_type",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "age_group",
+              "displayName": "age_group",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "sentiment_score",
+              "displayName": "sentiment_score",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "sentiment_label",
+              "displayName": "sentiment_label",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "emotions",
+              "displayName": "emotions",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "json",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "key_points",
+              "displayName": "key_points",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "json",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "absa_aspects",
+              "displayName": "absa_aspects",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "json",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "processed_at",
+              "displayName": "processed_at",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "dateTime",
+              "canBeUsedToMatch": true
+            }
+          ]
+        },
+        "options": {
+          "outputColumns": ["id"]
+        }
+      },
+      "credentials": {
+        "postgres": {
+          "id": "1",
+          "name": "PostgreSQL account"
+        }
+      }
+    },
+    {
+      "id": "qdrant_1",
+      "name": "Save to Qdrant",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [3050, 200],
+      "parameters": {
+        "method": "PUT",
+        "url": "http://qdrant:6333/collections/beauty_reviews/points",
+        "authentication": "none",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "points",
+              "value": "=[{\n  \"id\": {{ $json.id }},\n  \"vector\": {{ $json.embedding }},\n  \"payload\": {\n    \"review_id\": \"{{ $json.review_id }}\",\n    \"product_number\": \"{{ $json.product_number }}\",\n    \"content\": \"{{ $json.content }}\",\n    \"rating\": {{ $json.rating }},\n    \"sentiment_score\": {{ $json.sentiment_score }},\n    \"sentiment_label\": \"{{ $json.sentiment_label }}\",\n    \"created_at\": \"{{ $json.created_at }}\"\n  }\n}]"
+            }
+          ]
+        },
+        "options": {
+          "bodyContentType": "json"
+        }
+      }
+    },
+    {
+      "id": "webhook_response_1",
+      "name": "Parse User Query",
+      "type": "n8n-nodes-base.openAi",
+      "typeVersion": 1,
+      "position": [450, 600],
+      "parameters": {
+        "resource": "chat",
+        "model": "solar-pro",
+        "options": {
+          "temperature": 0.2,
+          "responseFormat": "json_object",
+          "baseURL": "https://api.upstage.ai/v1/solar"
+        },
+        "messages": {
+          "values": [
+            {
+              "role": "system",
+              "content": "사용자 쿼리 분석 전문가입니다.\n\n입력된 질문을 분석하여 JSON 형식으로 출력:\n{\n  \"intent\": \"추천\" | \"비교\" | \"리뷰요약\" | \"정보조회\",\n  \"keywords\": [\"핵심키워드1\", \"핵심키워드2\"],\n  \"filters\": {\n    \"skin_type\": \"건성\" | \"지성\" | \"복합성\" | null,\n    \"price_range\": \"저가\" | \"중가\" | \"고가\" | null,\n    \"concern\": \"모공\" | \"주름\" | \"미백\" | null\n  },\n  \"product_category\": \"토너\" | \"에센스\" | \"크림\" | null\n}"
+            },
+            {
+              "role": "user",
+              "content": "={{ $json.body.query || $json.query }}"
+            }
+          ]
+        }
+      },
+      "credentials": {
+        "openAiApi": {
+          "id": "2",
+          "name": "Upstage Solar API"
+        }
+      }
+    },
+    {
+      "id": "embedding_query_1",
+      "name": "Generate Query Embedding",
+      "type": "n8n-nodes-base.openAi",
+      "typeVersion": 1,
+      "position": [650, 600],
+      "parameters": {
+        "resource": "embedding",
+        "model": "text-embedding-3-small",
+        "text": "={{ $json.body.query || $json.query }}"
+      },
+      "credentials": {
+        "openAiApi": {
+          "id": "2",
+          "name": "OpenAI account"
+        }
+      }
+    },
+    {
+      "id": "qdrant_search_1",
+      "name": "Vector Search - Qdrant",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 3,
+      "position": [850, 500],
+      "parameters": {
+        "method": "POST",
+        "url": "http://qdrant:6333/collections/beauty_reviews/points/search",
+        "authentication": "none",
+        "sendBody": true,
+        "contentType": "application/json",
+        "body": "={\n  \"vector\": {{ $json.data[0].embedding }},\n  \"limit\": 20,\n  \"with_payload\": true,\n  \"score_threshold\": 0.7,\n  \"filter\": {\n    \"must\": [\n      {\n        \"key\": \"sentiment_score\",\n        \"range\": {\n          \"gte\": 3\n        }\n      }\n    ]\n  }\n}"
+      }
+    },
+    {
+      "id": "postgres_search_1",
+      "name": "Keyword Search - PostgreSQL",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.4,
+      "position": [850, 700],
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "=SELECT \n  br.*,\n  p.name as product_name,\n  p.price,\n  p.brand\nFROM beauty_reviews br\nJOIN products p ON br.product_number = p.product_number\nWHERE \n  br.sentiment_score >= 4\n  AND (br.content ILIKE '%{{ $json.message.content ? JSON.parse($json.message.content).keywords[0] : '' }}%' \n       OR br.content ILIKE '%{{ $json.message.content ? JSON.parse($json.message.content).keywords[1] : '' }}%')\nORDER BY br.like_count DESC, br.created_at DESC\nLIMIT 20;"
+      },
+      "credentials": {
+        "postgres": {
+          "id": "1",
+          "name": "PostgreSQL account"
+        }
+      }
+    },
+    {
+      "id": "merge_results_1",
+      "name": "Merge Search Results",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [1050, 600],
+      "parameters": {
+        "mode": "runOnceForAllItems",
+        "jsCode": "// Vector Search와 Keyword Search 결과 병합\nconst vectorResults = items.find(i => i.json.result)?.json.result || [];\nconst keywordResults = items.filter(i => i.json.content && !i.json.result) || [];\n\nconst mergedResults = new Map();\n\n// Vector Search 결과 (가중치 0.6)\nvectorResults.forEach(item => {\n  const id = item.id || item.payload.review_id;\n  mergedResults.set(id, {\n    ...item.payload,\n    vector_score: item.score * 0.6,\n    keyword_score: 0,\n    total_score: item.score * 0.6,\n    source: 'vector'\n  });\n});\n\n// Keyword Search 결과 (가중치 0.4)\nkeywordResults.forEach((item, idx) => {\n  const id = item.json.review_id;\n  const keywordScore = Math.max(0, (20 - idx) / 20) * 0.4;\n  \n  if (mergedResults.has(id)) {\n    const existing = mergedResults.get(id);\n    existing.keyword_score = keywordScore;\n    existing.total_score += keywordScore;\n    existing.source = 'both';\n  } else {\n    mergedResults.set(id, {\n      ...item.json,\n      vector_score: 0,\n      keyword_score: keywordScore,\n      total_score: keywordScore,\n      source: 'keyword'\n    });\n  }\n});\n\n// 점수 순 정렬 후 Top 15\nconst sortedResults = Array.from(mergedResults.values())\n  .sort((a, b) => b.total_score - a.total_score)\n  .slice(0, 15);\n\nreturn [{\n  json: {\n    reviews: sortedResults,\n    review_count: sortedResults.length,\n    avg_rating: sortedResults.reduce((sum, r) => sum + (r.rating || 0), 0) / sortedResults.length,\n    avg_sentiment: sortedResults.reduce((sum, r) => sum + (r.sentiment_score || 0), 0) / sortedResults.length\n  }\n}];"
+      }
+    },
+    {
+      "id": "absa_aggregation_1",
+      "name": "Aggregate ABSA Data",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 1,
+      "position": [1250, 600],
+      "parameters": {
+        "jsCode": "// ABSA 속성별 집계\nconst reviews = items[0].json.reviews || [];\nconst aspectMap = new Map();\n\nreviews.forEach(review => {\n  try {\n    const aspects = JSON.parse(review.absa_aspects || '[]');\n    \n    aspects.forEach(aspect => {\n      if (!aspect.mentioned) return;\n      \n      if (!aspectMap.has(aspect.name)) {\n        aspectMap.set(aspect.name, {\n          name: aspect.name,\n          positive: 0,\n          neutral: 0,\n          negative: 0,\n          total_score: 0,\n          count: 0,\n          examples: []\n        });\n      }\n      \n      const data = aspectMap.get(aspect.name);\n      data[aspect.sentiment] = (data[aspect.sentiment] || 0) + 1;\n      data.total_score += aspect.score;\n      data.count += 1;\n      \n      if (data.examples.length < 3 && aspect.quote) {\n        data.examples.push(aspect.quote);\n      }\n    });\n  } catch (e) {\n    // Skip invalid JSON\n  }\n});\n\nconst aggregatedAspects = Array.from(aspectMap.values()).map(aspect => ({\n  ...aspect,\n  avg_score: aspect.total_score / aspect.count,\n  sentiment_ratio: {\n    positive: aspect.positive / aspect.count,\n    neutral: aspect.neutral / aspect.count,\n    negative: aspect.negative / aspect.count\n  }\n}));\n\nreturn [{\n  json: {\n    ...items[0].json,\n    absa_summary: aggregatedAspects\n  }\n}];"
+      }
+    },
+    {
+      "id": "generate_answer_1",
+      "name": "Generate Final Answer",
+      "type": "n8n-nodes-base.openAi",
+      "typeVersion": 1,
+      "position": [1450, 600],
+      "parameters": {
+        "resource": "chat",
+        "model": "solar-pro",
+        "options": {
+          "temperature": 0.7,
+          "maxTokens": 1500,
+          "baseURL": "https://api.upstage.ai/v1/solar"
+        },
+        "messages": {
+          "values": [
+            {
+              "role": "system",
+              "content": "당신은 10년 경력의 뷰티 MD 출신 쇼핑 어드바이저입니다.\n\n수집된 실제 리뷰 데이터를 기반으로 솔직하고 근거 있는 조언을 제공하세요.\n\n# 답변 구조\n\n## 🎯 3줄 요약\n핵심 내용을 3문장으로 요약\n\n## 📊 데이터 기반 분석\n- 분석한 리뷰 수: X개\n- 평균 평점: X.X/5\n- 평균 감정 점수: X.X/5\n\n## 🔍 속성별 평가\n각 속성(보습력, 흡수력, 향 등)에 대해:\n- 점수와 긍정/부정 비율\n- 실제 리뷰 인용\n\n## ⚖️ 장단점\n### ✅ 장점\n- 구체적 장점 (리뷰 인용 포함)\n\n### ❌ 단점\n- 구체적 단점 (리뷰 인용 포함)\n\n## ⚠️ 주의사항\n특정 피부 타입이나 상황에서의 주의점\n\n## 💡 최종 판단\n추천 여부와 그 이유\n\n---\n반드시 통계와 실제 리뷰를 인용하여 근거를 제시하세요."
+            },
+            {
+              "role": "user",
+              "content": "=# 사용자 질문\n{{ $json.body.query || $json.query }}\n\n# 분석 데이터\n리뷰 수: {{ $json.review_count }}개\n평균 평점: {{ $json.avg_rating }}/5\n평균 감정 점수: {{ $json.avg_sentiment }}/5\n\n# ABSA 속성별 집계\n{{ JSON.stringify($json.absa_summary, null, 2) }}\n\n# 주요 리뷰 샘플 (Top 5)\n{{ $json.reviews.slice(0, 5).map((r, i) => `${i+1}. [${r.rating}/5] ${r.content} (좋아요: ${r.like_count})`).join('\\n') }}"
+            }
+          ]
+        }
+      },
+      "credentials": {
+        "openAiApi": {
+          "id": "2",
+          "name": "Upstage Solar API"
+        }
+      }
+    },
+    {
+      "id": "postgres_log_1",
+      "name": "Log Query",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.4,
+      "position": [1650, 600],
+      "parameters": {
+        "operation": "insert",
+        "schema": {
+          "__rl": true,
+          "value": "public",
+          "mode": "list"
+        },
+        "table": {
+          "__rl": true,
+          "value": "query_logs",
+          "mode": "list"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "user_id": "={{ $('User Query Webhook').item.json.body?.user_id || $('User Query Webhook').item.json.user_id }}",
+            "query": "={{ $('User Query Webhook').item.json.body?.query || $('User Query Webhook').item.json.query }}",
+            "answer": "={{ $json.message?.content }}",
+            "reviews_analyzed": "={{ $json.review_count }}",
+            "avg_rating": "={{ $json.avg_rating }}",
+            "avg_sentiment": "={{ $json.avg_sentiment }}",
+            "response_time_ms": "={{ Math.round((Date.now() - new Date($workflow.startTime).getTime())) }}"
+          }
+        },
+        "options": {
+          "outputColumns": ["id"]
+        }
+      },
+      "credentials": {
+        "postgres": {
+          "id": "1",
+          "name": "PostgreSQL account"
+        }
+      }
+    },
+    {
+      "id": "respond_1",
+      "name": "Respond to Webhook",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1,
+      "position": [1850, 600],
+      "parameters": {
+        "options": {
+          "responseCode": 200,
+          "responseHeaders": {
+            "entries": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          }
+        },
+        "respondWith": "json",
+        "responseBody": "={\n  \"success\": true,\n  \"answer\": {{ JSON.stringify($json.message.content) }},\n  \"metadata\": {\n    \"reviews_analyzed\": {{ $json.review_count }},\n    \"avg_rating\": {{ $json.avg_rating }},\n    \"avg_sentiment\": {{ $json.avg_sentiment }},\n    \"absa_aspects\": {{ $json.absa_summary.length }},\n    \"generated_at\": \"{{ $now }}\"\n  }\n}"
+      }
+    },
+    {
+      "id": "slack_1",
+      "name": "Slack Notification",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 1,
+      "position": [3250, 200],
+      "parameters": {
+        "operation": "post",
+        "channelId": "#beauty-agent-logs",
+        "text": "=✅ 크롤링 완료!\n\n📊 처리 결과:\n- 수집된 리뷰: {{ $json.total_reviews || 0 }}개\n- 새로운 리뷰: {{ $json.new_reviews || 0 }}개\n- 벡터 저장: {{ $json.vectors_saved || 0 }}개\n\n⏰ 실행 시간: {{ $workflow.startTime }}\n⏭️ 다음 실행: 내일 자정",
+        "otherOptions": {
+          "includeLinkToWorkflow": true
+        }
+      },
+      "credentials": {
+        "slackApi": {
+          "id": "3",
+          "name": "Slack account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "trigger_1": {
+      "main": [
+        [
+          {
+            "node": "postgres_1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "postgres_1": {
+      "main": [
+        [
+          {
+            "node": "split_1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "split_1": {
+      "main": [
+        [
+          {
+            "node": "http_1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "http_1": {
+      "main": [
+        [
+          {
+            "node": "code_1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "code_1": {
+      "main": [
+        [
+          {
+            "node": "postgres_2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "postgres_2": {
+      "main": [
+        [
+          {
+            "node": "if_1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "if_1": {
+      "main": [
+        [
+          {
+            "node": "openai_1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "openai_1": {
+      "main": [
+        [
+          {
+            "node": "code_sentiment",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "code_sentiment": {
+      "main": [
+        [
+          {
+            "node": "openai_2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "openai_2": {
+      "main": [
+        [
+          {
+            "node": "code_absa",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "code_absa": {
+      "main": [
+        [
+          {
+            "node": "openai_3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "openai_3": {
+      "main": [
+        [
+          {
+            "node": "code_2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "code_2": {
+      "main": [
+        [
+          {
+            "node": "postgres_3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "postgres_3": {
+      "main": [
+        [
+          {
+            "node": "qdrant_1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "qdrant_1": {
+      "main": [
+        [
+          {
+            "node": "slack_1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "webhook_1": {
+      "main": [
+        [
+          {
+            "node": "webhook_response_1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "webhook_response_1": {
+      "main": [
+        [
+          {
+            "node": "embedding_query_1",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "postgres_search_1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "embedding_query_1": {
+      "main": [
+        [
+          {
+            "node": "qdrant_search_1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "qdrant_search_1": {
+      "main": [
+        [
+          {
+            "node": "merge_results_1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "postgres_search_1": {
+      "main": [
+        [
+          {
+            "node": "merge_results_1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "merge_results_1": {
+      "main": [
+        [
+          {
+            "node": "absa_aggregation_1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "absa_aggregation_1": {
+      "main": [
+        [
+          {
+            "node": "generate_answer_1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "generate_answer_1": {
+      "main": [
+        [
+          {
+            "node": "postgres_log_1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "postgres_log_1": {
+      "main": [
+        [
+          {
+            "node": "respond_1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 2,
+  "updatedAt": "2026-02-04T00:00:00.000Z",
+  "versionId": "1"
+}

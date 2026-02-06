@@ -46,3 +46,9 @@ secrets.yml
 # Logs
 logs/
 *.log
+
+# Data
+*.png
+*.jpg
+*.jpeg
+*.gif

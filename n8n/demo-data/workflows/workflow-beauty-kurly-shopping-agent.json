@@ -69,6 +69,7 @@
       "name": "Fetch Kurly Reviews",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 3,
+      "disabled": true,
       "position": [850, 300],
       "parameters": {
         "method": "GET",
@@ -102,6 +103,7 @@
       "name": "Extract Review Data",
       "type": "n8n-nodes-base.code",
       "typeVersion": 1,
+      "disabled": true,
       "position": [1050, 300],
       "parameters": {
         "mode": "runOnceForAllItems",
@@ -113,6 +115,7 @@
       "name": "Check Existing Reviews",
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.4,
+      "disabled": true,
       "position": [1250, 300],
       "parameters": {
         "operation": "executeQuery",
@@ -130,6 +133,7 @@
       "name": "Filter New Reviews",
       "type": "n8n-nodes-base.if",
       "typeVersion": 1,
+      "disabled": true,
       "position": [1450, 300],
       "parameters": {
         "conditions": {

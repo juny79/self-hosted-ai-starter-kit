@@ -1,0 +1,5250 @@
+[
+  {
+    "no": 1000319181,
+    "name": "[달바] 화이트 트러플 퍼스트 스프레이 세럼 100ml 2개 세트 (옐로우 미스트 세럼)",
+    "short_description": "윤기와 보습을 더하는 산뜻 미스트 ",
+    "list_image_url": "https://product-image.kurly.com/product/image/e97cc80f-a118-41ef-b67d-ffe642065029.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/e97cc80f-a118-41ef-b67d-ffe642065029.jpg",
+    "sales_price": 59800,
+    "discounted_price": 37905,
+    "discount_rate": 36,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "5%+5%쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "5%+5%쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      },
+      {
+        "type": "BOTTOM_LEFT_IMAGE",
+        "name": "[달바] 비타토닝 토너 블리스터 3개",
+        "content": {
+          "width": 380,
+          "height": 380,
+          "opacity": 1.0,
+          "image_url": "https://product-image.kurly.com/sticker/image/9a718894-534e-4c69-a8cd-df68ef1049fd.png"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "999+",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000316422,
+    "name": "[설화수] 본윤 맨 기초 2종 세트 (본윤에센스, 본윤유액)",
+    "short_description": "남성 피부를 케어하는 기초 2종 세트 (+쇼핑백 선택 가능)",
+    "list_image_url": "https://product-image.kurly.com/product/image/f8cf8157-29a4-46c6-81ec-dbeb7959a1c3.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/f8cf8157-29a4-46c6-81ec-dbeb7959a1c3.jpg",
+    "sales_price": 125000,
+    "discounted_price": 112500,
+    "discount_rate": 10,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "12%+5% 쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "12%+5%쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      },
+      {
+        "type": "BOTTOM_LEFT_IMAGE",
+        "name": "에센셜,마스크,클폼,클오일,생크림리치",
+        "content": {
+          "width": 380,
+          "height": 380,
+          "opacity": 1.0,
+          "image_url": "https://product-image.kurly.com/sticker/image/693d368d-de9a-4b4e-a2dc-8ead80b4304e.png"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "848",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000261977,
+    "name": "[라 메르] 크렘 드 라 메르 30ml",
+    "short_description": "깊은 보습감을 선사하는 기적의 크림",
+    "list_image_url": "https://product-image.kurly.com/product/image/b75ea5d9-0a8d-4333-81f2-46c2ff61ff55.jpeg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/b75ea5d9-0a8d-4333-81f2-46c2ff61ff55.jpeg",
+    "sales_price": 322000,
+    "discounted_price": 273700,
+    "discount_rate": 15,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "BOTTOM_CENTER_TEXT",
+        "name": "최대혜택가 234,014원",
+        "content": {
+          "contents": [
+            {
+              "text": "최대혜택가 234,014원",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 0.4,
+          "background_color_code": "#000000"
+        }
+      },
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "10%쿠폰+증정",
+        "content": {
+          "contents": [
+            {
+              "text": "10%쿠폰+증정",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "172",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1001055717,
+    "name": "[헤라] 옴므 베이직 스페셜 세트 스킨 125ml/에멀젼 110ml 2종 (+쇼핑백)",
+    "short_description": "남성 피부 탄력 케어 루틴(+쇼핑백 증정)",
+    "list_image_url": "https://product-image.kurly.com/product/image/6ef4ffc9-5c53-4c92-96ff-cf5caac98734.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/6ef4ffc9-5c53-4c92-96ff-cf5caac98734.jpg",
+    "sales_price": 88000,
+    "discounted_price": 79200,
+    "discount_rate": 10,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "10%쿠폰+증정",
+        "content": {
+          "contents": [
+            {
+              "text": "10%쿠폰+증정",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      },
+      {
+        "type": "BOTTOM_LEFT_IMAGE",
+        "name": "쇼핑백(0410)",
+        "content": {
+          "width": 380,
+          "height": 380,
+          "opacity": 1.0,
+          "image_url": "https://product-image.kurly.com/sticker/image/feee945d-0f0e-45f1-9a7a-eb1539e59f6c.png"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "140",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 5069678,
+    "name": "[셀리맥스] 지우개 어성초 바하 필링 패드 60매",
+    "short_description": "매일 사용하는 각질 필링 패드",
+    "list_image_url": "https://product-image.kurly.com/product/image/9ef82e0c-aad1-4e74-8b86-186b045cb22b.png",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/9ef82e0c-aad1-4e74-8b86-186b045cb22b.png",
+    "sales_price": 17000,
+    "discounted_price": 10000,
+    "discount_rate": 41,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "+5%쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "+5%쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "999+",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1001108922,
+    "name": "[설화수] New 자음수/유액 150/125ml 2종  (택1) ※리뉴얼 출시 상품",
+    "short_description": "맑고 힘 있는 피부",
+    "list_image_url": "https://product-image.kurly.com/product/image/c93a9f6d-32b1-47c8-b29f-f17271bf4f21.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/c93a9f6d-32b1-47c8-b29f-f17271bf4f21.jpg",
+    "sales_price": 72000,
+    "discounted_price": 64800,
+    "discount_rate": 10,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "12%+5% 쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "12%+5%쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": true,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "484",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000369788,
+    "name": "[헤라] 에이지 어웨이 에스테틱 2종 세트 (+쇼핑백)",
+    "short_description": "콜라겐이 선사하는 탱탱한 탄력감(+쇼핑백 증정)",
+    "list_image_url": "https://product-image.kurly.com/product/image/5167c56b-c6f3-41bc-a974-188fd8424997.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/5167c56b-c6f3-41bc-a974-188fd8424997.jpg",
+    "sales_price": 125000,
+    "discounted_price": 112500,
+    "discount_rate": 10,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "10%쿠폰+증정",
+        "content": {
+          "contents": [
+            {
+              "text": "10%쿠폰+증정",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      },
+      {
+        "type": "BOTTOM_LEFT_IMAGE",
+        "name": "쇼핑백(0410)",
+        "content": {
+          "width": 380,
+          "height": 380,
+          "opacity": 1.0,
+          "image_url": "https://product-image.kurly.com/sticker/image/feee945d-0f0e-45f1-9a7a-eb1539e59f6c.png"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "66",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1001168262,
+    "name": "[조 말론 런던] 헤어 미스트 30ml 3종(택1) (선물박스 포함)",
+    "short_description": "가볍게 누리는 섬세한 향기",
+    "list_image_url": "https://product-image.kurly.com/product/image/81a9a462-7e48-4e6e-9f17-6d64c288d570.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/81a9a462-7e48-4e6e-9f17-6d64c288d570.jpg",
+    "sales_price": 71000,
+    "discounted_price": 67450,
+    "discount_rate": 5,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "BOTTOM_CENTER_TEXT",
+        "name": "최대혜택가 57,670원",
+        "content": {
+          "contents": [
+            {
+              "text": "최대혜택가 57,670원",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 0.4,
+          "background_color_code": "#000000"
+        }
+      },
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "10%+5%쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "10%+5%쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "64",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000125213,
+    "name": "[산타마리아노벨라] 아쿠아 디 로즈 장미수 토너 250/500ml 2종 (택1)",
+    "short_description": "사계절 멀티 토너",
+    "list_image_url": "https://product-image.kurly.com/product/image/62c075ad-d662-43e2-ad6b-3ad5aaa27640.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/62c075ad-d662-43e2-ad6b-3ad5aaa27640.jpg",
+    "sales_price": 39000,
+    "discounted_price": 37050,
+    "discount_rate": 5,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "주방 15%쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "+15%쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      },
+      {
+        "type": "BOTTOM_CENTER_TEXT",
+        "name": "최대혜택가 31,493원",
+        "content": {
+          "contents": [
+            {
+              "text": "최대혜택가 31,493원",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 0.4,
+          "background_color_code": "#000000"
+        }
+      }
+    ],
+    "is_multiple_price": true,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "999+",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000833356,
+    "name": "[피토메르] 특별 기획 세트 (올리고포스세럼 30ml+멜팅크림 30ml+올리고 비타C세럼 15ml)",
+    "short_description": "홈 에스테틱을 위한 기획 세트",
+    "list_image_url": "https://product-image.kurly.com/product/image/c79464bb-809a-4f49-b165-49b622d48be5.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/c79464bb-809a-4f49-b165-49b622d48be5.jpg",
+    "sales_price": 272000,
+    "discounted_price": 103550,
+    "discount_rate": 61,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [
+      {
+        "name": "Kurly Only",
+        "type": "KURLY_ONLY"
+      }
+    ],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "5%+5%쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "5%+5%쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "275",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000435445,
+    "name": "[랑콤] NEW 클라리피끄 더블 트리트먼트 에센스 150ml 세트 (1+1 용량 증정)",
+    "short_description": "맑고 촉촉한 피부를 위한 첫 시작",
+    "list_image_url": "https://product-image.kurly.com/product/image/d2568dd7-a722-4ce4-b821-67612460bc57.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/d2568dd7-a722-4ce4-b821-67612460bc57.jpg",
+    "sales_price": 189000,
+    "discounted_price": 160650,
+    "discount_rate": 15,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "15%쿠폰+증정(0410)",
+        "content": {
+          "contents": [
+            {
+              "text": "15%쿠폰+증정",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "102",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1001362187,
+    "name": "[SK-II] 페이셜 트리트먼트 클리어로션 160/230ml 2종(택1)",
+    "short_description": "자극없이 부드럽게 케어하는 스킨",
+    "list_image_url": "https://product-image.kurly.com/product/image/9d871715-35fa-4373-9ddd-b6ecf3711244.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/9d871715-35fa-4373-9ddd-b6ecf3711244.jpg",
+    "sales_price": 98000,
+    "discounted_price": 78400,
+    "discount_rate": 20,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "5%+5%쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "5%+5%쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": true,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "56",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1001639703,
+    "name": "[피지오겔] 헤리티지 DMT 페이셜 크림 세트(크림 100ml*2+토너 50ml)",
+    "short_description": "피지오겔 대표 상품 DMT 페이셜 크립 세트",
+    "list_image_url": "https://product-image.kurly.com/product/image/0476ce5d-6951-42da-9151-9c53c710d227.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/0476ce5d-6951-42da-9151-9c53c710d227.jpg",
+    "sales_price": 59900,
+    "discounted_price": 31900,
+    "discount_rate": 46,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "46",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000073638,
+    "name": "[크리니크] 지복합성 각질케어 토너3 400ml",
+    "short_description": "지복합성 피부를 위한 각질 관리 토너",
+    "list_image_url": "https://product-image.kurly.com/product/image/e16561ff-9ba8-4618-bc6e-8a0bbea75d6b.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/e16561ff-9ba8-4618-bc6e-8a0bbea75d6b.jpg",
+    "sales_price": 62000,
+    "discounted_price": 52700,
+    "discount_rate": 15,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "96",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000401950,
+    "name": "[헤라] 에이지 어웨이 에스테틱 3종 세트 (+쇼핑백)",
+    "short_description": "콜라겐이 선사하는 탱탱한 탄력감",
+    "list_image_url": "https://product-image.kurly.com/product/image/429ab0af-9484-43f5-9b3f-19d233bdbae8.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/429ab0af-9484-43f5-9b3f-19d233bdbae8.jpg",
+    "sales_price": 150000,
+    "discounted_price": 135000,
+    "discount_rate": 10,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "10%쿠폰+증정",
+        "content": {
+          "contents": [
+            {
+              "text": "10%쿠폰+증정",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      },
+      {
+        "type": "BOTTOM_LEFT_IMAGE",
+        "name": "쇼핑백(0410)",
+        "content": {
+          "width": 380,
+          "height": 380,
+          "opacity": 1.0,
+          "image_url": "https://product-image.kurly.com/sticker/image/feee945d-0f0e-45f1-9a7a-eb1539e59f6c.png"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "44",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 5061253,
+    "name": "[토리든] 다이브인 저분자 히알루론산 토너 300ml",
+    "short_description": "촉촉하게 시작하는 스킨케어",
+    "list_image_url": "https://product-image.kurly.com/product/image/39b26edf-8797-4eb5-892f-c4c31e91bbc4.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/39b26edf-8797-4eb5-892f-c4c31e91bbc4.jpg",
+    "sales_price": 21000,
+    "discounted_price": 13965,
+    "discount_rate": 33,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "724",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1001402348,
+    "name": "[에스트라] NEW 에이시카 365 수분토너 pH4.5 200ml",
+    "short_description": "",
+    "list_image_url": "https://product-image.kurly.com/product/image/a93806d3-02f4-4505-91f6-455fbf8c3db8.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/a93806d3-02f4-4505-91f6-455fbf8c3db8.jpg",
+    "sales_price": 28000,
+    "discounted_price": 25200,
+    "discount_rate": 10,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "10%쿠폰+증정",
+        "content": {
+          "contents": [
+            {
+              "text": "10%쿠폰+증정",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      },
+      {
+        "type": "BOTTOM_CENTER_TEXT",
+        "name": "쿠폰적용가 22,680원",
+        "content": {
+          "contents": [
+            {
+              "text": "쿠폰적용가 22,680원",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 0.4,
+          "background_color_code": "#000000"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "225",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000315574,
+    "name": "[헤라] 파워부스팅 스페셜 세트 2종 옴므 (+쇼핑백)",
+    "short_description": "탄탄한 남성 피부를 위한 선택(+쇼핑백 증정)",
+    "list_image_url": "https://product-image.kurly.com/product/image/b01e4506-55a5-4613-a75f-e4af2bee4da0.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/b01e4506-55a5-4613-a75f-e4af2bee4da0.jpg",
+    "sales_price": 134000,
+    "discounted_price": 120600,
+    "discount_rate": 10,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "10%쿠폰+증정",
+        "content": {
+          "contents": [
+            {
+              "text": "10%쿠폰+증정",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      },
+      {
+        "type": "BOTTOM_LEFT_IMAGE",
+        "name": "쇼핑백(0410)",
+        "content": {
+          "width": 380,
+          "height": 380,
+          "opacity": 1.0,
+          "image_url": "https://product-image.kurly.com/sticker/image/feee945d-0f0e-45f1-9a7a-eb1539e59f6c.png"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "49",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000742991,
+    "name": "[설화수] 자음생 2종 (생수/유액) 세트_지함보 포장",
+    "short_description": "인삼의 에너지가 담긴 스킨케어 세트 (+쇼핑백 선택 가능)",
+    "list_image_url": "https://product-image.kurly.com/product/image/1094e2ed-97c3-40e4-9493-7dcdd9334254.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/1094e2ed-97c3-40e4-9493-7dcdd9334254.jpg",
+    "sales_price": 225000,
+    "discounted_price": 202500,
+    "discount_rate": 10,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "12%+5% 쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "12%+5%쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      },
+      {
+        "type": "BOTTOM_LEFT_IMAGE",
+        "name": "0119 설화수_자음생 2종세트_증정",
+        "content": {
+          "width": 380,
+          "height": 380,
+          "opacity": 1.0,
+          "image_url": "https://product-image.kurly.com/sticker/image/731c6dce-57a4-444a-aab8-d971e32f86f6.png"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "323",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000125144,
+    "name": "[산타마리아노벨라] 토니코 페르 라 펠레 250ml (고수분 골드토너)",
+    "short_description": "쫀쫀한 고보습 영양 토너",
+    "list_image_url": "https://product-image.kurly.com/product/image/ae608ed3-cea0-44a3-824e-71c4c1725046.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/ae608ed3-cea0-44a3-824e-71c4c1725046.jpg",
+    "sales_price": 69000,
+    "discounted_price": 65550,
+    "discount_rate": 5,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "BOTTOM_CENTER_TEXT",
+        "name": "최대혜택가 55,718원",
+        "content": {
+          "contents": [
+            {
+              "text": "최대혜택가 55,718원",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 0.4,
+          "background_color_code": "#000000"
+        }
+      },
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "주방 15%쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "+15%쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "273",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000081907,
+    "name": "[야다] 선인장 토너 패드 리필 기획 세트 (단품 70매+리필팩 70매)",
+    "short_description": "선인장의 수분감을 머금은 패드",
+    "list_image_url": "https://product-image.kurly.com/product/image/acfb6009-9d36-4212-8b49-1d31e8b27d5e.jpeg?v=x0520",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/acfb6009-9d36-4212-8b49-1d31e8b27d5e.jpeg?v=x0520",
+    "sales_price": 41000,
+    "discounted_price": 26500,
+    "discount_rate": 35,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [
+      {
+        "name": "Kurly Only",
+        "type": "KURLY_ONLY"
+      }
+    ],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "증정이벤트조희영",
+        "content": {
+          "contents": [
+            {
+              "text": "증정이벤트",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "999+",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000358588,
+    "name": "[스킨푸드] 캐롯 카로틴 카밍 워터 패드 60매",
+    "short_description": "자극받은 피부를 달래는 당근 토너 패드",
+    "list_image_url": "https://product-image.kurly.com/product/image/cae07f1e-df74-4ede-9c54-e24ed9b9837b.jpeg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/cae07f1e-df74-4ede-9c54-e24ed9b9837b.jpeg",
+    "sales_price": 26000,
+    "discounted_price": 18200,
+    "discount_rate": 30,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "999+",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000926518,
+    "name": "[랑콤] NEW 토닉 꽁포르 400ml/ 200ml 2종 (택1) ",
+    "short_description": "촘촘하게 채우는 수분감",
+    "list_image_url": "https://product-image.kurly.com/product/image/7316b107-c13b-4ca2-80a6-358f5d10ab93.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/7316b107-c13b-4ca2-80a6-358f5d10ab93.jpg",
+    "sales_price": 69000,
+    "discounted_price": 58650,
+    "discount_rate": 15,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "15%쿠폰+증정(0410)",
+        "content": {
+          "contents": [
+            {
+              "text": "15%쿠폰+증정",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": true,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "51",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000119929,
+    "name": "[키엘] 울트라 훼이셜 토너 250ml (마이뷰티박스 가입일 구매 시 +3% 적립)",
+    "short_description": "쫀쫀한 보습감을 전하는 데일리 토너",
+    "list_image_url": "https://product-image.kurly.com/product/image/37332c1c-3684-4b53-bb6b-448db40b0877.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/37332c1c-3684-4b53-bb6b-448db40b0877.jpg",
+    "sales_price": 47000,
+    "discounted_price": 39950,
+    "discount_rate": 15,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "+8% 쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "+8% 쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      },
+      {
+        "type": "BOTTOM_CENTER_TEXT",
+        "name": "최대혜택가 35,652원",
+        "content": {
+          "contents": [
+            {
+              "text": "최대혜택가 35,652원",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 0.4,
+          "background_color_code": "#000000"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "290",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000154420,
+    "name": "[피지오겔] 레드수딩 시카밸런스 토너 200ml",
+    "short_description": "산뜻하게 케어하는 유수분 밸런스",
+    "list_image_url": "https://product-image.kurly.com/product/image/643836f4-134b-4dba-9c07-178eef049924.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/643836f4-134b-4dba-9c07-178eef049924.jpg",
+    "sales_price": 28000,
+    "discounted_price": 21900,
+    "discount_rate": 21,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "534",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000530034,
+    "name": "[숨37] 시크릿 에센스 45ml 스페셜 선물세트  (쇼핑백 증정)",
+    "short_description": "발효 성분의 에너지를 담은 에센스",
+    "list_image_url": "https://product-image.kurly.com/product/image/c9f2a0c6-a887-4024-91ec-c7b8fb6d3459.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/c9f2a0c6-a887-4024-91ec-c7b8fb6d3459.jpg",
+    "sales_price": 48000,
+    "discounted_price": 43200,
+    "discount_rate": 10,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "26 설 얼리_15%",
+        "content": {
+          "contents": [
+            {
+              "text": "+15%쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "918",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000326986,
+    "name": "[랑콤] 레네르지 탄력 메모리젤 400ml / 200ml 2종 (택1)",
+    "short_description": "탄탄하게 채워지는 수분 탄력",
+    "list_image_url": "https://product-image.kurly.com/product/image/2384d09a-9625-4cd6-9527-579aacc5781c.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/2384d09a-9625-4cd6-9527-579aacc5781c.jpg",
+    "sales_price": 110000,
+    "discounted_price": 93500,
+    "discount_rate": 15,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "15%쿠폰+증정(0410)",
+        "content": {
+          "contents": [
+            {
+              "text": "15%쿠폰+증정",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": true,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "33",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 5071254,
+    "name": "[싸이닉] 히아루론산 앰플 스킨 300ml",
+    "short_description": "앰플을 바른 듯 탄탄한 수분감",
+    "list_image_url": "https://product-image.kurly.com/product/image/7d87944a-be80-4b75-a2c4-7d3033694fdc.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/7d87944a-be80-4b75-a2c4-7d3033694fdc.jpg",
+    "sales_price": 30000,
+    "discounted_price": 9900,
+    "discount_rate": 67,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "999+",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1001543301,
+    "name": "[함께 구매 시 증정][스킨수티컬즈] C E 페룰릭 30ml & 이퀄라이징 토너 200ml",
+    "short_description": "항산화 리추얼 케어 세트 ",
+    "list_image_url": "https://product-image.kurly.com/product/image/e2534f8d-fa3e-4964-90c6-4ab9b6ceea0d.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/e2534f8d-fa3e-4964-90c6-4ab9b6ceea0d.jpg",
+    "sales_price": 56000,
+    "discounted_price": 50400,
+    "discount_rate": 10,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "+12%쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "+12%쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      },
+      {
+        "type": "BOTTOM_LEFT_IMAGE",
+        "name": "스킨수티컬즈 쇼핑백",
+        "content": {
+          "width": 380,
+          "height": 380,
+          "opacity": 1.0,
+          "image_url": "https://product-image.kurly.com/sticker/image/e87cc1af-21a5-43b8-927f-7c9c0e4d635f.png"
+        }
+      }
+    ],
+    "is_multiple_price": true,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "191",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000396607,
+    "name": "[디오디너리] 히알루로닉 애시드 2% + B5 2종 (택1)(수분세럼)",
+    "short_description": "가볍게 돌아온 대표 수분 세럼",
+    "list_image_url": "https://product-image.kurly.com/product/image/5ce45f44-58ae-46ed-afd9-98cbb5691627.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/5ce45f44-58ae-46ed-afd9-98cbb5691627.jpg",
+    "sales_price": 14200,
+    "discounted_price": 14200,
+    "discount_rate": 0,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": true,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "999+",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000166069,
+    "name": "[시슬리] 로씨옹 또니끄 오 플뢰르 250ml (스킨)",
+    "short_description": "맑고 촉촉하게 유지하는 피부",
+    "list_image_url": "https://product-image.kurly.com/product/image/a62bc10c-4c0f-40f6-b0db-5a0175730701.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/a62bc10c-4c0f-40f6-b0db-5a0175730701.jpg",
+    "sales_price": 160000,
+    "discounted_price": 144000,
+    "discount_rate": 10,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "10%쿠폰+증정",
+        "content": {
+          "contents": [
+            {
+              "text": "10%쿠폰+증정",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "82",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000659110,
+    "name": "[원씽] 병풀 추출물 단품/기획 3종 (택1)",
+    "short_description": "알찬 구성으로 만나는 진정 보습 에센스",
+    "list_image_url": "https://product-image.kurly.com/product/image/7e89244c-6a1c-4104-b0c4-ae353e8842ed.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/7e89244c-6a1c-4104-b0c4-ae353e8842ed.jpg",
+    "sales_price": 14000,
+    "discounted_price": 10900,
+    "discount_rate": 22,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [
+      {
+        "name": "Kurly Only",
+        "type": "KURLY_ONLY"
+      }
+    ],
+    "stickers_v2": [],
+    "is_multiple_price": true,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "999+",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 5070095,
+    "name": "[AHC] 리뉴에이지 토탈 4종 기프트 세트",
+    "short_description": "다시 되찾는 빛과 탄력",
+    "list_image_url": "https://product-image.kurly.com/product/image/dec9d937-4d45-4b2c-ba27-1c09ad88fa52.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/dec9d937-4d45-4b2c-ba27-1c09ad88fa52.jpg",
+    "sales_price": 160000,
+    "discounted_price": 47300,
+    "discount_rate": 70,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "BOTTOM_LEFT_IMAGE",
+        "name": "쇼핑백(0410)",
+        "content": {
+          "width": 380,
+          "height": 380,
+          "opacity": 1.0,
+          "image_url": "https://product-image.kurly.com/sticker/image/feee945d-0f0e-45f1-9a7a-eb1539e59f6c.png"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "394",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1001752267,
+    "name": "[키엘] 투명 에센스 100ml 세트 (에멀전 30mL)",
+    "short_description": "투명하게 가꾸는 피부",
+    "list_image_url": "https://product-image.kurly.com/product/image/92ab03d4-f352-4d71-9820-65374be9198d.png",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/92ab03d4-f352-4d71-9820-65374be9198d.png",
+    "sales_price": 215000,
+    "discounted_price": 182750,
+    "discount_rate": 15,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "+8% 쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "+8% 쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      },
+      {
+        "type": "BOTTOM_CENTER_TEXT",
+        "name": "최대혜택가 163,087원",
+        "content": {
+          "contents": [
+            {
+              "text": "최대혜택가 163,087원",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 0.4,
+          "background_color_code": "#000000"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "197",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000297204,
+    "name": "[프란츠] 줄기세포배양액 2000 앰플 토너",
+    "short_description": "첫 단계부터 채우는 탄탄함",
+    "list_image_url": "https://product-image.kurly.com/product/image/153bb244-22f9-4b6f-b630-cfd5171ca08f.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/153bb244-22f9-4b6f-b630-cfd5171ca08f.jpg",
+    "sales_price": 32000,
+    "discounted_price": 21280,
+    "discount_rate": 33,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "5%+5%쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "5%+5%쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "244",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000222282,
+    "name": "[라로제] 모이스춰라이징 토닉로션 200mL (멀티토너)",
+    "short_description": "풍부한 수분감의 진정 토너",
+    "list_image_url": "https://product-image.kurly.com/product/image/6994f806-0e50-4340-99e0-a89c167ac186.png",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/6994f806-0e50-4340-99e0-a89c167ac186.png",
+    "sales_price": 39000,
+    "discounted_price": 37050,
+    "discount_rate": 5,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "뷰컬페(럭셔리) +5% 쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "+5% 쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "654",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000742957,
+    "name": "[설화수] 자음생수 150ml",
+    "short_description": "촘촘하게 채워지는 수분 탄력",
+    "list_image_url": "https://product-image.kurly.com/product/image/46dc4e8b-11d9-4d84-8b6b-e2c1d62a1c32.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/46dc4e8b-11d9-4d84-8b6b-e2c1d62a1c32.jpg",
+    "sales_price": 110000,
+    "discounted_price": 99000,
+    "discount_rate": 10,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "12%+5% 쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "12%+5%쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "84",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 5081977,
+    "name": "[바이오더마] 하이드라비오 토너 250ml",
+    "short_description": "청량하고 산뜻한 수분 충전 토너",
+    "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1655455386247l0.jpeg",
+    "product_vertical_medium_url": "https://img-cf.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/shop/data/goods/1655455386247l0.jpeg",
+    "sales_price": 29000,
+    "discounted_price": 23200,
+    "discount_rate": 20,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "251",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000073636,
+    "name": "[크리니크] 건복합성 각질케어 토너2 400ml",
+    "short_description": "건복합성 피부를 위한 각질 관리 토너",
+    "list_image_url": "https://product-image.kurly.com/product/image/c82e5555-13ba-4099-b0cd-2f65ab56e23e.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/c82e5555-13ba-4099-b0cd-2f65ab56e23e.jpg",
+    "sales_price": 62000,
+    "discounted_price": 52700,
+    "discount_rate": 15,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "187",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000487399,
+    "name": "[마몽드] 플로라글로우 로즈리퀴드마스크 (토너) 80ml",
+    "short_description": "매끄럽게 빛나는 수분광 피부",
+    "list_image_url": "https://product-image.kurly.com/product/image/c3b98d12-f686-4f97-98c8-0bcfb3710909.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/c3b98d12-f686-4f97-98c8-0bcfb3710909.jpg",
+    "sales_price": 30000,
+    "discounted_price": 24000,
+    "discount_rate": 20,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "73",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000382593,
+    "name": "[메디필] 레드락토 메조 콜라겐 토너 1000ml",
+    "short_description": "깨끗한 피부를 위한 콜라겐 토너",
+    "list_image_url": "https://product-image.kurly.com/product/image/edf6ebc3-a6e1-4544-8e51-f63f3c0afed4.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/edf6ebc3-a6e1-4544-8e51-f63f3c0afed4.jpg",
+    "sales_price": 55000,
+    "discounted_price": 16500,
+    "discount_rate": 70,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "906",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000572047,
+    "name": "[시슬리] 수프리미아 앳 나이트 더 수프림 안티-에이징 스킨 케어 50ml (안티에이징 크림)",
+    "short_description": "밤 사이 전하는 강력한 안티에이징 효과",
+    "list_image_url": "https://product-image.kurly.com/product/image/71245c87-0454-4650-9c09-62a1dce153e2.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/71245c87-0454-4650-9c09-62a1dce153e2.jpg",
+    "sales_price": 1050000,
+    "discounted_price": 945000,
+    "discount_rate": 10,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [
+      {
+        "name": "Kurly Only",
+        "type": "KURLY_ONLY"
+      }
+    ],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "10%쿠폰+증정",
+        "content": {
+          "contents": [
+            {
+              "text": "10%쿠폰+증정",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000036574,
+    "name": "[에스티 로더] 마이크로 에센스 트리트먼트 로션 200ml",
+    "short_description": "피부에 선사하는 발효 에너지",
+    "list_image_url": "https://product-image.kurly.com/product/image/7d5a914e-c622-47ed-b2c4-16745ef5bef8.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/7d5a914e-c622-47ed-b2c4-16745ef5bef8.jpg",
+    "sales_price": 220000,
+    "discounted_price": 168300,
+    "discount_rate": 23,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "10%쿠폰+증정",
+        "content": {
+          "contents": [
+            {
+              "text": "10%쿠폰+증정",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "118",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000363506,
+    "name": "[산타마리아노벨라] 토니코 페르 라펠레(영양 토너) & 이드랄리아 크림(수분 장미크림) 기획세트 (+쇼핑백 증정)",
+    "short_description": "럭셔리 스킨케어 기프트 세트",
+    "list_image_url": "https://product-image.kurly.com/product/image/db90dab8-9ca6-4edf-844e-7fdbd4eaf478.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/db90dab8-9ca6-4edf-844e-7fdbd4eaf478.jpg",
+    "sales_price": 196000,
+    "discounted_price": 186200,
+    "discount_rate": 5,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [
+      {
+        "name": "Kurly Only",
+        "type": "KURLY_ONLY"
+      }
+    ],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "주방 15%쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "+15%쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      },
+      {
+        "type": "BOTTOM_CENTER_TEXT",
+        "name": "최대혜택가 158,270원",
+        "content": {
+          "contents": [
+            {
+              "text": "최대혜택가 158,270원",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 0.4,
+          "background_color_code": "#000000"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "424",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000053534,
+    "name": "[비오템] 포스 수프림 토너 200ml",
+    "short_description": "",
+    "list_image_url": "https://product-image.kurly.com/product/image/8baebfac-efde-43ae-ad86-b1bf172ad224.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/8baebfac-efde-43ae-ad86-b1bf172ad224.jpg",
+    "sales_price": 103000,
+    "discounted_price": 87550,
+    "discount_rate": 15,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "+10% 쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "+10% 쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      },
+      {
+        "type": "BOTTOM_CENTER_TEXT",
+        "name": "최대혜택가 78,795원",
+        "content": {
+          "contents": [
+            {
+              "text": "최대혜택가 78,795원",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 0.4,
+          "background_color_code": "#000000"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "24",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1001303383,
+    "name": "[아이오페] 슈퍼바이탈 소프너/에멀젼 150ml 2종 세트",
+    "short_description": "6세대 NEW 슈퍼바이탈",
+    "list_image_url": "https://product-image.kurly.com/product/image/a5ee353c-96c3-4ba0-aa14-f783b87e1951.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/a5ee353c-96c3-4ba0-aa14-f783b87e1951.jpg",
+    "sales_price": 139000,
+    "discounted_price": 118150,
+    "discount_rate": 15,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "12",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1001788585,
+    "name": "[키엘] 홀리데이 칼렌듈라 꽃잎 토너 250ml 세트",
+    "short_description": "닦토 또는 스킨팩으로 활용 가능한 만능 토너",
+    "list_image_url": "https://product-image.kurly.com/product/image/a90c2888-eafb-42c5-9ad6-a0a20573bfeb.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/a90c2888-eafb-42c5-9ad6-a0a20573bfeb.jpg",
+    "sales_price": 64000,
+    "discounted_price": 52768,
+    "discount_rate": 17,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "BOTTOM_CENTER_TEXT",
+        "name": "최대혜택가 48,547원",
+        "content": {
+          "contents": [
+            {
+              "text": "최대혜택가 48,547원",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 0.4,
+          "background_color_code": "#000000"
+        }
+      },
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "+8% 쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "+8% 쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "96",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000376552,
+    "name": "[라 메르] 에센셜 토닉 (토너) 100ml",
+    "short_description": "세안 후 수분 진정 결 케어 토너",
+    "list_image_url": "https://product-image.kurly.com/product/image/4cd8ab4b-d999-4f38-b767-81a7e1130b58.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/4cd8ab4b-d999-4f38-b767-81a7e1130b58.jpg",
+    "sales_price": 98000,
+    "discounted_price": 83300,
+    "discount_rate": 15,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "BOTTOM_CENTER_TEXT",
+        "name": "최대혜택가 71,222원",
+        "content": {
+          "contents": [
+            {
+              "text": "최대혜택가 71,222원",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 0.4,
+          "background_color_code": "#000000"
+        }
+      },
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "10%쿠폰+증정",
+        "content": {
+          "contents": [
+            {
+              "text": "10%쿠폰+증정",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "67",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1001624008,
+    "name": "[피토메르] XMF30ml세럼+XMF50ml크림+로제토너150ml 기획세트 (+쇼핑백 증정)",
+    "short_description": "수분과 탄력을 동시에 케어하는 하이엔드 라인",
+    "list_image_url": "https://product-image.kurly.com/product/image/501e80d9-c6fc-43d1-b404-0657129e10e5.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/501e80d9-c6fc-43d1-b404-0657129e10e5.jpg",
+    "sales_price": 532000,
+    "discounted_price": 188100,
+    "discount_rate": 64,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [
+      {
+        "name": "Kurly Only",
+        "type": "KURLY_ONLY"
+      }
+    ],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "5%+5%쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "5%+5%쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "99",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1001188197,
+    "name": "[라운드랩] 1025 독도 토너 200ml",
+    "short_description": "",
+    "list_image_url": "https://product-image.kurly.com/product/image/49a7f9be-2b4e-41cf-aa1b-94b4abdefb0f.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/49a7f9be-2b4e-41cf-aa1b-94b4abdefb0f.jpg",
+    "sales_price": 15000,
+    "discounted_price": 13500,
+    "discount_rate": 10,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "389",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1001397771,
+    "name": "[클라랑스] 토너 200ml 3종 (하이드레이팅 토닝로션, 수딩토너, 퓨리파잉 토닝 중 택1)",
+    "short_description": "내 피부에 딱 맞는 맞춤 토너",
+    "list_image_url": "https://product-image.kurly.com/product/image/342e0b5c-bb55-458d-85a5-57723e489f6e.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/342e0b5c-bb55-458d-85a5-57723e489f6e.jpg",
+    "sales_price": 51000,
+    "discounted_price": 43350,
+    "discount_rate": 15,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "25",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1001224969,
+    "name": "[시슬리] 휘또 블랑 라 로씨옹 150ml (브라이트닝 스킨)",
+    "short_description": "",
+    "list_image_url": "https://product-image.kurly.com/product/image/b76774ef-b2de-4351-9718-5ff74113baf4.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/b76774ef-b2de-4351-9718-5ff74113baf4.jpg",
+    "sales_price": 225000,
+    "discounted_price": 202500,
+    "discount_rate": 10,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "10%쿠폰+증정",
+        "content": {
+          "contents": [
+            {
+              "text": "10%쿠폰+증정",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1001889256,
+    "name": "[헤라] NEW 시그니아 리파이닝 워터 에센스 180ml",
+    "short_description": "피부 근본을 바꾸는 첫 단계",
+    "list_image_url": "https://product-image.kurly.com/product/image/034828ef-511c-4920-afc8-ab53d2088dfa.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/034828ef-511c-4920-afc8-ab53d2088dfa.jpg",
+    "sales_price": 100000,
+    "discounted_price": 76500,
+    "discount_rate": 23,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "10%쿠폰+증정",
+        "content": {
+          "contents": [
+            {
+              "text": "10%쿠폰+증정",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "32",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1001450775,
+    "name": "[아브카] 대용량 토너 1L 3종 (시카/히알루론산/비타민, 택1)",
+    "short_description": "수분팩,닦토도 부담없는 대용량 토너",
+    "list_image_url": "https://product-image.kurly.com/product/image/2e5008b4-b81f-46a1-ad22-9a1fe94a22d5.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/2e5008b4-b81f-46a1-ad22-9a1fe94a22d5.jpg",
+    "sales_price": 13000,
+    "discounted_price": 8900,
+    "discount_rate": 31,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "221",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1001321198,
+    "name": "[세타필] 시카 세라마이드 수딩 고요 크림 45ml (오간자 파우치+시카 크림 10g+하이드레이팅 포밍 크림 클렌저 29ml+바디워시 50ml 증정)",
+    "short_description": "피부 진정 & 장벽 동시 케어",
+    "list_image_url": "https://product-image.kurly.com/product/image/cdc862d5-37e8-4190-b78b-cb3fe3bf5894.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/cdc862d5-37e8-4190-b78b-cb3fe3bf5894.jpg",
+    "sales_price": 25000,
+    "discounted_price": 17900,
+    "discount_rate": 28,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [
+      {
+        "name": "Kurly Only",
+        "type": "KURLY_ONLY"
+      }
+    ],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "증정이벤트조희영",
+        "content": {
+          "contents": [
+            {
+              "text": "증정이벤트",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      },
+      {
+        "type": "BOTTOM_LEFT_IMAGE",
+        "name": "쇼핑백(0410)",
+        "content": {
+          "width": 380,
+          "height": 380,
+          "opacity": 1.0,
+          "image_url": "https://product-image.kurly.com/sticker/image/feee945d-0f0e-45f1-9a7a-eb1539e59f6c.png"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "48",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000317699,
+    "name": "[닥터지] 블랙 스네일 프레스티지 4종 세트 (토너+에멀전+앰플+크림 구성) (쇼핑백 증정)",
+    "short_description": "탄력과 영양 루틴 케어의 시작",
+    "list_image_url": "https://product-image.kurly.com/product/image/80fe5848-1a6a-4dbc-83dc-f2954a5b074d.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/80fe5848-1a6a-4dbc-83dc-f2954a5b074d.jpg",
+    "sales_price": 45000,
+    "discounted_price": 43000,
+    "discount_rate": 4,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "84",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000425557,
+    "name": "[닥터에이지] 시카 리페어 필링 패드 60매/30매 (택1) ",
+    "short_description": "민감 피부를 위한 순한 진정 패드",
+    "list_image_url": "https://product-image.kurly.com/product/image/23f9546b-6bf4-4ce3-a44e-587c88735fe6.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/23f9546b-6bf4-4ce3-a44e-587c88735fe6.jpg",
+    "sales_price": 19000,
+    "discounted_price": 9500,
+    "discount_rate": 50,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "999+",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000417868,
+    "name": "[토니모리] 원더 히알루론산 촉촉토너 500ml",
+    "short_description": "촘촘하게 채우는 수분 토너",
+    "list_image_url": "https://product-image.kurly.com/product/image/0514c922-ed41-4b80-8d5d-6af8c7f0859e.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/0514c922-ed41-4b80-8d5d-6af8c7f0859e.jpg",
+    "sales_price": 15000,
+    "discounted_price": 11000,
+    "discount_rate": 26,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "432",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000391147,
+    "name": "[이니스프리] 블랙티 유스 인핸싱 스킨케어 세트",
+    "short_description": "건강하고 빛나는 피부의 완성",
+    "list_image_url": "https://product-image.kurly.com/product/image/02c1c4f8-952c-4386-9d48-250df5677ee7.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/02c1c4f8-952c-4386-9d48-250df5677ee7.jpg",
+    "sales_price": 54000,
+    "discounted_price": 37800,
+    "discount_rate": 30,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "44",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000171352,
+    "name": "[동국제약] 센텔리안24 마데카 릴리프 토너 300ml",
+    "short_description": "병풀 성분으로 민감 피부 진정 케어",
+    "list_image_url": "https://product-image.kurly.com/product/image/4e6e72e3-3f76-4bbd-b84d-cf3cc7a992ff.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/4e6e72e3-3f76-4bbd-b84d-cf3cc7a992ff.jpg",
+    "sales_price": 35000,
+    "discounted_price": 18900,
+    "discount_rate": 46,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "12% 쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "12% 쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "175",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000240563,
+    "name": "[벤튼] 구아바70 스킨토너 패드팩 (70매)",
+    "short_description": "한 장으로 케어하는 피부 고민  ",
+    "list_image_url": "https://product-image.kurly.com/product/image/3a09d6af-21c8-4559-a8af-87a7cfbd5b69.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/3a09d6af-21c8-4559-a8af-87a7cfbd5b69.jpg",
+    "sales_price": 36000,
+    "discounted_price": 23400,
+    "discount_rate": 35,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "110",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000171350,
+    "name": "[동국제약] 센텔리안24 더 마데카크림 해피타이거에디션 (50ml*3개입)",
+    "short_description": "특별한 에디션으로 만나는 마데카 크림",
+    "list_image_url": "https://product-image.kurly.com/product/image/3d915618-ff84-450b-ae5f-001bbfdd83ab.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/3d915618-ff84-450b-ae5f-001bbfdd83ab.jpg",
+    "sales_price": 60000,
+    "discounted_price": 33000,
+    "discount_rate": 45,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "12% 쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "12% 쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "223",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1001109497,
+    "name": "[일리윤] 세라마이드 아토 속보습 스킨 250ml",
+    "short_description": "속부터 순하게 채우는 보습",
+    "list_image_url": "https://product-image.kurly.com/product/image/9b7c40ad-893e-44d1-ac98-0d1488c38caf.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/9b7c40ad-893e-44d1-ac98-0d1488c38caf.jpg",
+    "sales_price": 23000,
+    "discounted_price": 18400,
+    "discount_rate": 20,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "증정이벤트조희영",
+        "content": {
+          "contents": [
+            {
+              "text": "증정이벤트",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "232",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000081913,
+    "name": "[피토메르] 로제비자쥐 토너 500ml (대용량)",
+    "short_description": "매끈하고 부드럽게 정돈하는 피부",
+    "list_image_url": "https://product-image.kurly.com/product/image/ea3afd25-76cd-4e86-835f-40a1eb34e6ee.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/ea3afd25-76cd-4e86-835f-40a1eb34e6ee.jpg",
+    "sales_price": 90000,
+    "discounted_price": 71250,
+    "discount_rate": 20,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "5%+5%쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "5%+5%쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "119",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000761261,
+    "name": "[데코르테] AQ 앱솔루드 트리트먼트 에멀션/로션 III 세트 2종 (건성용, 택1/ +AQ 4종, 리포솜 세럼 6ml 증정)",
+    "short_description": "탄탄하게 차오르는 투명 광채",
+    "list_image_url": "https://product-image.kurly.com/product/image/80435b3a-6500-44b5-ac11-a27f8fea3616.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/80435b3a-6500-44b5-ac11-a27f8fea3616.jpg",
+    "sales_price": 126000,
+    "discounted_price": 107100,
+    "discount_rate": 15,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [
+      {
+        "name": "Kurly Only",
+        "type": "KURLY_ONLY"
+      }
+    ],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "뷰컬페(럭셔리) +5% 쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "+5% 쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "20",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 5060191,
+    "name": "[원씽] 어성초 추출물 단품/기획 3종 (택1)",
+    "short_description": "울퉁불퉁 피부 요철에 매끈 진정 케어 ",
+    "list_image_url": "https://product-image.kurly.com/product/image/6f069c09-f7b2-4b22-b0c4-36f9b65b85c6.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/6f069c09-f7b2-4b22-b0c4-36f9b65b85c6.jpg",
+    "sales_price": 14000,
+    "discounted_price": 10900,
+    "discount_rate": 22,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": true,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "999+",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 5055359,
+    "name": "[야다] 선인장 토너패드 휴대용 (2매*10EA)",
+    "short_description": "파우치에 쏙 가볍게 휴대하는",
+    "list_image_url": "https://product-image.kurly.com/product/image/f19f7e62-acc5-4775-9e2b-7f67cfb661c7.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/f19f7e62-acc5-4775-9e2b-7f67cfb661c7.jpg",
+    "sales_price": 8800,
+    "discounted_price": 6600,
+    "discount_rate": 25,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "증정이벤트조희영",
+        "content": {
+          "contents": [
+            {
+              "text": "증정이벤트",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "999+",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000740571,
+    "name": "[더랩바이블랑두] 올리고 히알루론산 딥 토너 200ml + 카밍크림 10ml*2 증정 기획세트",
+    "short_description": "산뜻하게 촉촉함을 채워주는 토너",
+    "list_image_url": "https://product-image.kurly.com/product/image/6992001a-9195-433d-9aab-e88bcefff44a.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/6992001a-9195-433d-9aab-e88bcefff44a.jpg",
+    "sales_price": 23000,
+    "discounted_price": 15990,
+    "discount_rate": 30,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [
+      {
+        "name": "Kurly Only",
+        "type": "KURLY_ONLY"
+      }
+    ],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "867",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 5058792,
+    "name": "[디오디너리] 글리코릭 애시드 7% 엑스폴리에이팅 토너 2종 (택1)(고강도각질토너)",
+    "short_description": "고강도 각질 제거 토너 ",
+    "list_image_url": "https://product-image.kurly.com/product/image/74427b5e-10b0-4e32-8803-008dde9c5b81.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/74427b5e-10b0-4e32-8803-008dde9c5b81.jpg",
+    "sales_price": 11300,
+    "discounted_price": 11300,
+    "discount_rate": 0,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": true,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "717",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1001053271,
+    "name": "[오휘] 미라클 모이스처 핑크베리어 3종 기획 (스킨150ml+에멀전130ml+크림30ml+미니 립스틱 포함 4종 증정)(+오간자 증정)",
+    "short_description": "탄탄하게 세우는 보습 장벽",
+    "list_image_url": "https://product-image.kurly.com/product/image/1014fec4-fa0c-45ac-8806-ce76c5c2b952.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/1014fec4-fa0c-45ac-8806-ce76c5c2b952.jpg",
+    "sales_price": 120000,
+    "discounted_price": 108000,
+    "discount_rate": 10,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "5%+5%쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "5%+5%쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "32",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000315576,
+    "name": "[헤라] 하이드로 리플렉팅 2종 세트 (토너, 플루이드) (+쇼핑백)",
+    "short_description": "헤라의 수분 광채 라인(+쇼핑백 증정)",
+    "list_image_url": "https://product-image.kurly.com/product/image/144f0f0e-5a67-40b0-86ac-0403d2a4b4df.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/144f0f0e-5a67-40b0-86ac-0403d2a4b4df.jpg",
+    "sales_price": 113000,
+    "discounted_price": 101700,
+    "discount_rate": 10,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "10%쿠폰+증정",
+        "content": {
+          "contents": [
+            {
+              "text": "10%쿠폰+증정",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      },
+      {
+        "type": "BOTTOM_LEFT_IMAGE",
+        "name": "쇼핑백(0410)",
+        "content": {
+          "width": 380,
+          "height": 380,
+          "opacity": 1.0,
+          "image_url": "https://product-image.kurly.com/sticker/image/feee945d-0f0e-45f1-9a7a-eb1539e59f6c.png"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "20",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1001171127,
+    "name": "[프리메라] 오가니언스 워터리 에센스 250ml",
+    "short_description": "피부를 달래는 수분 진정 에센스",
+    "list_image_url": "https://product-image.kurly.com/product/image/f2d60f54-1a3e-484e-b516-933a0b33e638.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/f2d60f54-1a3e-484e-b516-933a0b33e638.jpg",
+    "sales_price": 34000,
+    "discounted_price": 25024,
+    "discount_rate": 26,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "8%+5%쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "8%+5%쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "124",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000180602,
+    "name": "[키엘] 울트라 훼이셜 오일-프리* 젤 크림 단품 50/125ml 2종 (택1) (마이뷰티박스 가입일 구매 시 +3% 적립)",
+    "short_description": "산뜻하게 완성하는 촉촉함",
+    "list_image_url": "https://product-image.kurly.com/product/image/3993c52f-5e89-4913-a1e6-3cb484a3ae3a.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/3993c52f-5e89-4913-a1e6-3cb484a3ae3a.jpg",
+    "sales_price": 95000,
+    "discounted_price": 80750,
+    "discount_rate": 15,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "+8% 쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "+8% 쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      },
+      {
+        "type": "BOTTOM_CENTER_TEXT",
+        "name": "최대혜택가 72,062원",
+        "content": {
+          "contents": [
+            {
+              "text": "최대혜택가 72,062원",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 0.4,
+          "background_color_code": "#000000"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "63",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 5056172,
+    "name": "[폴라초이스] 스킨 퍼펙팅 바하 리퀴드 (바르는 각질제거제)",
+    "short_description": "모공까지 청소하는 각질 제거 토너",
+    "list_image_url": "https://product-image.kurly.com/product/image/45e5cf24-115e-400f-8216-8fb6a596fa2a.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/45e5cf24-115e-400f-8216-8fb6a596fa2a.jpg",
+    "sales_price": 39000,
+    "discounted_price": 31114,
+    "discount_rate": 20,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "5%쿠폰+증정",
+        "content": {
+          "contents": [
+            {
+              "text": "5%쿠폰+증정",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "426",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000631274,
+    "name": "[한율] 어린쑥 수분진정 토너, 플루이드 2종 세트",
+    "short_description": "수분진정 루틴 완성 케어 세트",
+    "list_image_url": "https://product-image.kurly.com/product/image/adc0eae2-9fb7-4ac9-abe6-535054a98117.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/adc0eae2-9fb7-4ac9-abe6-535054a98117.jpg",
+    "sales_price": 59000,
+    "discounted_price": 47405,
+    "discount_rate": 19,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "5%+5%쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "5%+5%쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "31",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000050542,
+    "name": "[셀리맥스] 지우개 수정화장 패드 1BOX (30매)",
+    "short_description": "언제 어디서든 깨끗한 메이크업 수정",
+    "list_image_url": "https://product-image.kurly.com/product/image/03a94899-a9ce-49d0-9dc0-5abc09bd1e65.png",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/03a94899-a9ce-49d0-9dc0-5abc09bd1e65.png",
+    "sales_price": 16000,
+    "discounted_price": 10000,
+    "discount_rate": 37,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "+5%쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "+5%쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "187",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1001511843,
+    "name": "[스킨수티컬즈] 피토 코렉티브 토너 200ML + 미스트 공병 기획세트",
+    "short_description": "피부를 진정시키는 수분 토너",
+    "list_image_url": "https://product-image.kurly.com/product/image/ab3e845c-44a0-4e2d-ba7f-5c2ced926da9.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/ab3e845c-44a0-4e2d-ba7f-5c2ced926da9.jpg",
+    "sales_price": 101000,
+    "discounted_price": 90900,
+    "discount_rate": 10,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000642685,
+    "name": "[더후] 비첩 자생 디스커버리 세트 (에센스25ml+토너20ml+에멀젼20ml+크림10ml+폼40ml/오간자,쇼핑백 증정) ",
+    "short_description": "스스로 차오르는 피부 속 깊은 힘",
+    "list_image_url": "https://product-image.kurly.com/product/image/f27d83a5-a9c6-464f-9484-79b22779d460.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/f27d83a5-a9c6-464f-9484-79b22779d460.jpg",
+    "sales_price": 85000,
+    "discounted_price": 59500,
+    "discount_rate": 30,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "5%+5%쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "5%+5%쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      },
+      {
+        "type": "BOTTOM_LEFT_IMAGE",
+        "name": "쇼핑백",
+        "content": {
+          "width": 380,
+          "height": 380,
+          "opacity": 1.0,
+          "image_url": "https://product-image.kurly.com/sticker/image/477280ef-9f62-4043-a471-2031d982725d.png"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "38",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000616463,
+    "name": "[용카] NEW 로션 용카 PS 200ml (중, 건성용 미스트 타입)",
+    "short_description": "중건성 피부를 위한 수분 진정 토너",
+    "list_image_url": "https://product-image.kurly.com/product/image/847437dd-cb3a-472c-817b-e5f4405302f7.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/847437dd-cb3a-472c-817b-e5f4405302f7.jpg",
+    "sales_price": 55000,
+    "discounted_price": 49500,
+    "discount_rate": 10,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "14",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 5030294,
+    "name": "[아로마티카] 수딩 알로에 베라 젤",
+    "short_description": "알로에의 수분을 듬뿍 담은",
+    "list_image_url": "https://product-image.kurly.com/product/image/5a0591b2-f752-49ef-ba74-eaafed822df3.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/5a0591b2-f752-49ef-ba74-eaafed822df3.jpg",
+    "sales_price": 11000,
+    "discounted_price": 8910,
+    "discount_rate": 19,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "10%쿠폰+증정",
+        "content": {
+          "contents": [
+            {
+              "text": "10%쿠폰+증정",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "999+",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000036504,
+    "name": "[달팡] 인트랄 데일리 미셀러 토너 200mL",
+    "short_description": "피부가 편안한 진정 토너",
+    "list_image_url": "https://product-image.kurly.com/product/image/66d9d6df-a36b-4e7a-a5af-3cc1adc77350.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/66d9d6df-a36b-4e7a-a5af-3cc1adc77350.jpg",
+    "sales_price": 47000,
+    "discounted_price": 39950,
+    "discount_rate": 15,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "158",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 5100618,
+    "name": "[아벤느] 온천수 토너 이드랑스 딥 모이스트 로션 2종 (택1)",
+    "short_description": "온천수 가득 집중 수분 충전 토너",
+    "list_image_url": "https://product-image.kurly.com/product/image/feb1c3db-350c-4ad7-9e99-7bdd05d663cb.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/feb1c3db-350c-4ad7-9e99-7bdd05d663cb.jpg",
+    "sales_price": 29000,
+    "discounted_price": 24600,
+    "discount_rate": 15,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "뷰컬페(럭셔리) +5% 쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "+5% 쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": true,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "173",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000915112,
+    "name": "[동국제약] 센텔리안24 리바이탈라이징 콜라겐 에멀전 120ml",
+    "short_description": "탄력과 함께 윤기 있게 가꾸는 피부",
+    "list_image_url": "https://product-image.kurly.com/product/image/b0663525-3c26-4cf2-93e9-6a1d5906873c.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/b0663525-3c26-4cf2-93e9-6a1d5906873c.jpg",
+    "sales_price": 21000,
+    "discounted_price": 11900,
+    "discount_rate": 43,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "12% 쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "12% 쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "73",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1001788614,
+    "name": "[키엘] 칼렌듈라 꽃잎 토너 500ml 세트 (토너 40ml *4개)",
+    "short_description": "닦토 또는 스킨팩으로 활용 가능한 만능 토너",
+    "list_image_url": "https://product-image.kurly.com/product/image/82ff0d76-2658-4274-bcbf-3f363c5a47c5.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/82ff0d76-2658-4274-bcbf-3f363c5a47c5.jpg",
+    "sales_price": 107000,
+    "discounted_price": 88222,
+    "discount_rate": 17,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "+8% 쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "+8% 쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      },
+      {
+        "type": "BOTTOM_CENTER_TEXT",
+        "name": "최대혜택가 81,164원",
+        "content": {
+          "contents": [
+            {
+              "text": "최대혜택가 81,164원",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 0.4,
+          "background_color_code": "#000000"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "30",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1001144394,
+    "name": "[TWW] 네롤리 인퓨전 250ml (토너/스킨)",
+    "short_description": "네롤리꽃수를 가득 머금은",
+    "list_image_url": "https://product-image.kurly.com/product/image/bddaba94-dead-4b83-93ee-faf866d98b7d.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/bddaba94-dead-4b83-93ee-faf866d98b7d.jpg",
+    "sales_price": 66000,
+    "discounted_price": 66000,
+    "discount_rate": 0,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "12",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000427330,
+    "name": "[피토메르] 로제비자쥐 250ml 토너",
+    "short_description": "클렌징 워터로도 손색없는 장미 토너",
+    "list_image_url": "https://img-cf.kurly.com/shop/data/goods/1647388047965l0.jpg",
+    "product_vertical_medium_url": "https://img-cf.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/shop/data/goods/1647388047965l0.jpg",
+    "sales_price": 56000,
+    "discounted_price": 37050,
+    "discount_rate": 33,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "5%+5%쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "5%+5%쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "107",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000301012,
+    "name": "[엘지생활건강] 피지오겔 DMT 로션 선물세트",
+    "short_description": "피지오겔 베스트 상품으로 구성된 선물세트",
+    "list_image_url": "https://product-image.kurly.com/product/image/66d4632f-bd3a-414d-ad43-544feb86bda3.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/66d4632f-bd3a-414d-ad43-544feb86bda3.jpg",
+    "sales_price": 47500,
+    "discounted_price": 27000,
+    "discount_rate": 43,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "197",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1001592460,
+    "name": "[셀리맥스] 더 리얼 노니 수분 밸런싱 토너 150mL",
+    "short_description": "노니의 생기와 수분을 그대로 담아",
+    "list_image_url": "https://product-image.kurly.com/product/image/1eea09f6-c987-433e-96a2-18d278a292fd.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/1eea09f6-c987-433e-96a2-18d278a292fd.jpg",
+    "sales_price": 25000,
+    "discounted_price": 12200,
+    "discount_rate": 51,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "+5%쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "+5%쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "20",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000180577,
+    "name": "[키엘] 데일리 리파이닝 밀크필 토너 200ml (마이뷰티박스 가입일 구매 시 +3% 적립)",
+    "short_description": "필링 워터와 에센스 두 제형의 토너",
+    "list_image_url": "https://product-image.kurly.com/product/image/a8cf6c56-ce32-4745-958d-633c8f13c80a.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/a8cf6c56-ce32-4745-958d-633c8f13c80a.jpg",
+    "sales_price": 95000,
+    "discounted_price": 80750,
+    "discount_rate": 15,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "+8% 쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "+8% 쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      },
+      {
+        "type": "BOTTOM_CENTER_TEXT",
+        "name": "최대혜택가 72,062원",
+        "content": {
+          "contents": [
+            {
+              "text": "최대혜택가 72,062원",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 0.4,
+          "background_color_code": "#000000"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "13",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 5052230,
+    "name": "[야다] 선인장 토너패드 (60매)",
+    "short_description": "선인장의 수분감을 촉촉히 적신",
+    "list_image_url": "https://product-image.kurly.com/product/image/dfe75d80-86bd-4346-a74c-b2f8d4991f2a.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/dfe75d80-86bd-4346-a74c-b2f8d4991f2a.jpg",
+    "sales_price": 22000,
+    "discounted_price": 15000,
+    "discount_rate": 31,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "증정이벤트조희영",
+        "content": {
+          "contents": [
+            {
+              "text": "증정이벤트",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "999+",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000339372,
+    "name": "[에스네이처] 아쿠아 오아시스 토너 300ml",
+    "short_description": "수분 충전 & 각질 케어 토너",
+    "list_image_url": "https://product-image.kurly.com/product/image/c00f3bc5-b719-47eb-baea-13a6b3733d8d.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/c00f3bc5-b719-47eb-baea-13a6b3733d8d.jpg",
+    "sales_price": 25000,
+    "discounted_price": 20900,
+    "discount_rate": 16,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "41",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000146228,
+    "name": "[이니스프리] 그린티 히알루론산 스킨 170ml",
+    "short_description": "녹차의 촉촉함을 담은 스킨",
+    "list_image_url": "https://product-image.kurly.com/product/image/f03fa070-5018-49d6-abca-1f0facf7da9a.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/f03fa070-5018-49d6-abca-1f0facf7da9a.jpg",
+    "sales_price": 19000,
+    "discounted_price": 13300,
+    "discount_rate": 30,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "증정이벤트",
+        "content": {
+          "contents": [
+            {
+              "text": "증정이벤트",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      },
+      {
+        "type": "BOTTOM_LEFT_IMAGE",
+        "name": "이니스프리 선세럼2ml",
+        "content": {
+          "width": 380,
+          "height": 380,
+          "opacity": 1.0,
+          "image_url": "https://product-image.kurly.com/sticker/image/557b65db-5271-486f-89c4-7f5f066394d4.png"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "213",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1001327440,
+    "name": "[풀리] 쌀 세라 에센스 토너 250ml",
+    "short_description": "",
+    "list_image_url": "https://product-image.kurly.com/product/image/874b77dc-3e5d-4ed5-a5e1-fbfc4107ea90.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/874b77dc-3e5d-4ed5-a5e1-fbfc4107ea90.jpg",
+    "sales_price": 27000,
+    "discounted_price": 21800,
+    "discount_rate": 19,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "30",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000136668,
+    "name": "[셀퓨전씨] 포스트 알파 쿨링 패드 70매 2종 (택1)",
+    "short_description": "시원하게 진정 쿨링 케어",
+    "list_image_url": "https://product-image.kurly.com/product/image/8dd30b14-e2c3-4f09-bc36-961353b98d25.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/8dd30b14-e2c3-4f09-bc36-961353b98d25.jpg",
+    "sales_price": 23000,
+    "discounted_price": 14000,
+    "discount_rate": 39,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "522",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000915109,
+    "name": "[동국제약] 센텔리안24 리바이탈라이징 콜라겐 토너 120ml",
+    "short_description": "탱글한 젤 타입으로 촘촘 탄력 케어",
+    "list_image_url": "https://product-image.kurly.com/product/image/20767af1-a6f8-48f2-aa9e-671b3af357ee.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/20767af1-a6f8-48f2-aa9e-671b3af357ee.jpg",
+    "sales_price": 21000,
+    "discounted_price": 11900,
+    "discount_rate": 43,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "12% 쿠폰",
+        "content": {
+          "contents": [
+            {
+              "text": "12% 쿠폰",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "53",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000396773,
+    "name": "[시세이도] 맨 수분 베이직 기프트 세트 (로션 150ml + 플루이드 100ml + 증정품 2종 + 쇼핑백)",
+    "short_description": "건조한 남성 피부를 위한 수분 케어",
+    "list_image_url": "https://product-image.kurly.com/product/image/51f46cf1-1e5b-4d69-9ed5-c1e0e8f989b2.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/51f46cf1-1e5b-4d69-9ed5-c1e0e8f989b2.jpg",
+    "sales_price": 103000,
+    "discounted_price": 77044,
+    "discount_rate": 25,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [
+      {
+        "type": "TOP_LEFT_TEXT",
+        "name": "12%쿠폰+증정",
+        "content": {
+          "contents": [
+            {
+              "text": "12%쿠폰+증정",
+              "opacity": 1.0,
+              "font_style": "BOLD",
+              "font_effect": "NONE",
+              "font_color_code": "#FFFFFF"
+            }
+          ],
+          "background_opacity": 1.0,
+          "background_color_code": "#BD76FF"
+        }
+      }
+    ],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "10",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000661292,
+    "name": "[스트라이덱스] 센시티브 패드 90매",
+    "short_description": "바하 성분 패드로 관리하는 피부결",
+    "list_image_url": "https://product-image.kurly.com/product/image/b3f2396c-8c99-49bb-8c5c-ad7c84da07ad.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/b3f2396c-8c99-49bb-8c5c-ad7c84da07ad.jpg",
+    "sales_price": 13900,
+    "discounted_price": 11880,
+    "discount_rate": 14,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "575",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000168228,
+    "name": "[스킨푸드] 캐롯 카로틴 카밍 워터 패드 세트 (2매입X5개)",
+    "short_description": "자극 받은 피부를 달래는 토너 패드",
+    "list_image_url": "https://product-image.kurly.com/product/image/f969ebf4-d257-43f7-929e-8fdac51b2f66.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/f969ebf4-d257-43f7-929e-8fdac51b2f66.jpg",
+    "sales_price": 8000,
+    "discounted_price": 5600,
+    "discount_rate": 30,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "443",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000073652,
+    "name": "[크리니크] 안티-블레미쉬 솔루션 클래리파잉 로션 200ml",
+    "short_description": "각질과 피지를 산뜻하게 정돈",
+    "list_image_url": "https://product-image.kurly.com/product/image/701b320e-3528-4c9c-84da-c8ad3caa2ab4.jpg",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/701b320e-3528-4c9c-84da-c8ad3caa2ab4.jpg",
+    "sales_price": 44000,
+    "discounted_price": 37400,
+    "discount_rate": 15,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "85",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  },
+  {
+    "no": 1000080017,
+    "name": "[꼬달리] 비노클린 모이스처라이징 토너 100/200ml 2종 (택1)",
+    "short_description": "진정 보습 장미수 토너",
+    "list_image_url": "https://product-image.kurly.com/product/image/d27e0400-3520-4b0b-b199-a4b0e22fd029.jpg?v=0422",
+    "product_vertical_medium_url": "https://product-image.kurly.com/hdims/resize/%5E%3E360x%3E468/cropcenter/360x468/quality/85/src/product/image/d27e0400-3520-4b0b-b199-a4b0e22fd029.jpg?v=0422",
+    "sales_price": 32000,
+    "discounted_price": 28800,
+    "discount_rate": 10,
+    "is_buy_now": false,
+    "is_purchase_status": true,
+    "is_giftable": false,
+    "is_only_adult": false,
+    "is_sold_out": false,
+    "sold_out_title": "Coming Soon",
+    "sold_out_text": "",
+    "can_restock_notify": true,
+    "tags": [],
+    "stickers_v2": [],
+    "is_multiple_price": false,
+    "group_product": {
+      "is_group": false,
+      "is_not_representative": false
+    },
+    "product_view_status": "BUY_POSSIBLE",
+    "not_purchase_message": "Coming Soon",
+    "delivery_type_infos": [
+      {
+        "type": "DAWN",
+        "description": "샛별배송"
+      }
+    ],
+    "review_count": "274",
+    "is_sales": true,
+    "ranking_number": null,
+    "is_low_stock": false
+  }
+]

@@ -1,0 +1,450 @@
+{
+  "name": "컬리 스킨 초기 데이터 적재",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "kurly-initial-load",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "name": "Webhook",
+      "webhookId": "kurly-initial-load",
+      "id": "webhook",
+      "typeVersion": 2,
+      "position": [
+        192,
+        304
+      ],
+      "type": "n8n-nodes-base.webhook"
+    },
+    {
+      "parameters": {
+        "jsCode": "const inputData = $input.first().json;\nconst products = inputData.body || inputData;\nconst productArray = Array.isArray(products) ? products : [products];\n\nconst productData = [];\n\nfor (const product of productArray) {\n  // database_schema.sql의 products 테이블 컬럼에 맞게 매핑\n  productData.push({\n    json: {\n      product_number: String(product.product_no),\n      name: product.name,\n      brand: product.brand || 'Unknown',\n      category: 'beauty',\n      subcategory: product.category || 'skincare',\n      price: product.discounted_price || product.sales_price,\n      original_price: product.sales_price,\n      discount_rate: product.sales_price > 0 ? ((product.sales_price - (product.discounted_price || product.sales_price)) / product.sales_price * 100).toFixed(2) : 0,\n      description: product.short_description || '',\n      image_url: product.product_vertical_medium_url || '',\n      product_url: product.url || '',\n      status: 'active'\n    }\n  });\n}\n\nreturn productData;"
+      },
+      "name": "제품 추출",
+      "id": "code-products",
+      "typeVersion": 2,
+      "position": [
+        448,
+        208
+      ],
+      "type": "n8n-nodes-base.code"
+    },
+    {
+      "parameters": {
+        "jsCode": "const inputData = $input.first().json;\nconst products = inputData.body || inputData;\nconst productArray = Array.isArray(products) ? products : [products];\n\nconst reviewData = [];\n\nfor (const product of productArray) {\n  if (product.reviews && Array.isArray(product.reviews)) {\n    for (const review of product.reviews) {\n      // database_schema.sql의 beauty_reviews 테이블에 맞게 매핑\n      reviewData.push({\n        json: {\n          review_id: String(review.id || review.reviewId || Date.now() + Math.random()),\n          product_number: String(product.product_no),\n          content: review.contents || review.content,\n          rating: review.rating || review.score || null,\n          created_at: review.registeredAt || review.created_at || new Date().toISOString(),\n          author: review.author?.name || review.authorName || 'Anonymous',\n          like_count: review.like_count || review.likeCount || 0,\n          verified_purchase: review.verified_purchase || false,\n          skin_type: review.skin_type || review.attributes?.skin_type || null,\n          age_group: review.age_group || review.attributes?.age_group || null\n        }\n      });\n    }\n  }\n}\n\nreturn reviewData;"
+      },
+      "name": "리뷰 추출",
+      "id": "code-reviews",
+      "typeVersion": 2,
+      "position": [
+        464,
+        448
+      ],
+      "type": "n8n-nodes-base.code"
+    },
+    {
+      "parameters": {
+        "operation": "upsert",
+        "schema": {
+          "__rl": true,
+          "mode": "list",
+          "value": "public"
+        },
+        "table": {
+          "__rl": true,
+          "mode": "list",
+          "value": "products"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [
+            "product_number"
+          ],
+          "schema": [
+            {
+              "id": "id",
+              "displayName": "id",
+              "required": false,
+              "defaultMatch": true,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "product_no",
+              "displayName": "product_no",
+              "required": true,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "product_name",
+              "displayName": "product_name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": false,
+              "removed": false
+            },
+            {
+              "id": "review_count",
+              "displayName": "review_count",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": false,
+              "removed": false
+            },
+            {
+              "id": "short_description",
+              "displayName": "short_description",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": false,
+              "removed": false
+            },
+            {
+              "id": "product_image_url",
+              "displayName": "product_image_url",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": false,
+              "removed": false
+            },
+            {
+              "id": "sales_price",
+              "displayName": "sales_price",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": false,
+              "removed": false
+            },
+            {
+              "id": "discounted_price",
+              "displayName": "discounted_price",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": false,
+              "removed": false
+            },
+            {
+              "id": "created_at",
+              "displayName": "created_at",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "dateTime",
+              "canBeUsedToMatch": false,
+              "removed": false
+            },
+            {
+              "id": "product_notice_notices",
+              "displayName": "product_notice_notices",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "object",
+              "canBeUsedToMatch": false,
+              "removed": false
+            },
+            {
+              "id": "updated_at",
+              "displayName": "updated_at",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "dateTime",
+              "canBeUsedToMatch": false,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "name": "제품 저장",
+      "id": "postgres-products",
+      "typeVersion": 2.5,
+      "position": [
+        640,
+        208
+      ],
+      "type": "n8n-nodes-base.postgres",
+      "credentials": {
+        "postgres": {
+          "id": "X8p7g0WwztKPtHo9",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.contents }}",
+        "options": {
+          "systemMessage": "=당신은 화장품 리뷰의 감성을 분석하는 전문가입니다.\n리뷰 내용을 읽고 고객의 만족도를 5점 척도로 평가해주세요.\n\n## 평가 기준:\n- **5점 (Very satisfied)**: 매우 만족, 극찬, 재구매 의사 강함, 강력 추천\n- **4점 (Satisfied)**: 만족, 좋음, 긍정적 평가가 많음\n- **3점 (Neutral)**: 보통, 중립적, 장단점 혼재, 판단 보류\n- **2점 (Dissatisfied)**: 불만족, 기대 이하, 부정적 평가\n- **1점 (Very dissatisfied)**: 매우 불만족, 강한 불만, 피부 트러블, 사용 중단\n\n## Few-Shot Examples:\n\n### 5점 (Very satisfied) 예시:\n**리뷰 1:**\n\"언니가 쓰고 있어서 추천받아서 샀는데 결론만 말씀드리면 건성이신분들에게 완전 추천합니다! 저는 얼굴이 중건성~건성이라 세수하고 나오면 늘 토너하기 전에 얼굴이 찢어질 듯이 건조한 느낌이 많이 들었었는데 이 오일 스프레이세럼 사용하고는 그런 당기는 느낌이 많이 없어졌습니다.\"\n**점수: 5점**\n\n**리뷰 2:**\n\"재재재재구매 너무 좋아요\"\n**점수: 5점**\n\n**리뷰 3:**\n\"달바는 진리입니다.\"\n**점수: 5점**\n\n**리뷰 4:**\n\"몇년째 쓰는 꿀템이에요 이거만 레이어링해서 3번정도 뿌려주면 겨울건조함 저리가라입니다\"\n**점수: 5점**\n\n### 4점 (Satisfied) 예시:\n**리뷰 1:**\n\"리뷰보고 구매했는데 괜찮네요. 저는 화장 마무리에 뿌리는데 얼굴에 물광이 도는게 아주 맘에 드네요. 다쓰면 또 구매의향 있어요.\"\n**점수: 4점**\n\n**리뷰 2:**\n\"향도 좋고 촉촉하니 좋아요\"\n**점수: 4점**\n\n**리뷰 3:**\n\"분사력도 좋고 부드럽게 흡수되는 느낌입니다~\"\n**점수: 4점**\n\n**리뷰 4:**\n\"세안후 바로 뿌리면 촉촉해요\"\n**점수: 4점**\n\n### 3점 (Neutral) 예시:\n**리뷰 1:**\n\"음 좋다고 샀는데 더 써봐야알거 같아요\"\n**점수: 3점**\n\n**리뷰 2:**\n\"글쎄요..저는 생각보다 그냥 쏘쏘에요.기대가너무컸나봐요\"\n**점수: 3점**\n\n**리뷰 3:**\n\"아직까지 크게 트라블은 안나요 건성인분들이 잘 맞을거같아요\"\n**점수: 3점**\n\n**리뷰 4:**\n\"좋다고해서ㅡ사봤어요ㅡ\"\n**점수: 3점**\n\n### 2점 (Dissatisfied) 예시:\n**리뷰 1:**\n\"향이 강해서 저는 별로 입니다\"\n**점수: 2점**\n\n**리뷰 2:**\n\"기대만큼은 아니에요\"\n**점수: 2점**\n\n**리뷰 3:**\n\"음 기대하고 샀는데 뭐 촉촉함 유지는 그닥... 뿌릴때만 반짝 촉촉했다가 그후는 바른지 전혀모르겠음 두통산거는 퍽퍽 쓰고 재구매는 안할래요~^^\"\n**점수: 2점**\n\n**리뷰 4:**\n\"생각보다 별로에요... 향도 제 취향 아니고 ㅠㅠ\"\n**점수: 2점**\n\n### 1점 (Very dissatisfied) 예시:\n**리뷰 1:**\n\"너무 별로예요 피부를 생각하면 이런 제품 쓰지마세요ㅜ 처음 사용하자마자 바로 피부 붉어지고 알러지 반응 올라왔습니다 달바 좋다고 많이 들어서 이럴줄은 몰랐어요.. 인공향 심하게 강해요ㅜㅜ 은은xx 어지러울 정도\"\n**점수: 1점**\n\n**리뷰 2:**\n\"미스트대용으로 썼는데 얼굴은 번들거리는데 건조함이 없어지지는 않네요 그리고 뿌리고 한두시간 지나고부터 눈시림이 심하네요 저렴하게 샀다고 좋아했는데 못쓰게되서 속상하네요\"\n**점수: 1점**\n\n**리뷰 3:**\n\"주로사용하는 미스트인데 쟁여놓아요. 뿌렸을때는 촉촉한것같은데 사용후 흡수되고나서는 얼굴이 많이 화끈거려 사용하게되지 않네요\"\n**점수: 1점**\n\n**리뷰 4:**\n\"유명한데는 이유가 있죠만... 저한테는 안맞아서 엄마 드렸어요\"\n**점수: 1점**\n\n---\n\n## 지침:\n1. 리뷰의 전체적인 톤과 감정을 파악하세요\n2. 재구매 의사, 추천 여부를 중요하게 고려하세요\n3. \"좋아요\", \"만족\", \"추천\" 등의 긍정 키워드 확인\n4. \"별로\", \"실망\", \"안맞아요\" 등의 부정 키워드 확인\n5. 느낌표(!)의 개수와 이모티콘도 감정의 강도를 나타냅니다\n6. 짧은 리뷰의 경우 사용된 단어의 강도를 중심으로 판단하세요\n\n반드시 1-5 사이의 숫자만 반환하세요. 다른 설명 없이 숫자 하나만 출력하세요."
+        }
+      },
+      "name": "AI Agent",
+      "id": "ai-agent",
+      "typeVersion": 1.7,
+      "position": [
+        656,
+        448
+      ],
+      "type": "@n8n/n8n-nodes-langchain.agent"
+    },
+    {
+      "parameters": {
+        "jsCode": "const aiItems = $input.all();\nconst reviewNode = $('리뷰 추출');\nconst reviewItems = reviewNode.all();\n\nconst output = [];\n\nfor (let i = 0; i < aiItems.length; i++) {\n  const aiOutput = aiItems[i].json.output || aiItems[i].json.text || '3';\n  \n  const scoreMatch = String(aiOutput).match(/[1-5]/);\n  const score = scoreMatch ? parseInt(scoreMatch[0]) : 3;\n  \n  const reviewData = reviewItems[i]?.json || {};\n  \n  // 감성 라벨 매핑\n  const sentimentLabels = {\n    5: 'Very satisfied',\n    4: 'Satisfied',\n    3: 'Neutral',\n    2: 'Dissatisfied',\n    1: 'Very dissatisfied'\n  };\n  \n  // database_schema.sql의 beauty_reviews 테이블 컬럼에 맞게 출력\n  output.push({\n    json: {\n      review_id: reviewData.review_id,\n      product_number: reviewData.product_number,\n      content: reviewData.content,\n      rating: reviewData.rating,\n      created_at: reviewData.created_at,\n      author: reviewData.author,\n      like_count: reviewData.like_count,\n      verified_purchase: reviewData.verified_purchase,\n      skin_type: reviewData.skin_type,\n      age_group: reviewData.age_group,\n      sentiment_score: score,\n      sentiment_label: sentimentLabels[score],\n      emotions: JSON.stringify({score: score, label: sentimentLabels[score]}),\n      key_points: JSON.stringify([]),\n      absa_aspects: JSON.stringify([]),\n      processed_at: new Date().toISOString()\n    }\n  });\n}\n\nreturn output;"
+      },
+      "name": "점수 추출",
+      "id": "extract-score",
+      "typeVersion": 2,
+      "position": [
+        944,
+        448
+      ],
+      "type": "n8n-nodes-base.code"
+    },
+    {
+      "parameters": {
+        "schema": {
+          "__rl": true,
+          "mode": "list",
+          "value": "public"
+        },
+        "table": {
+          "__rl": true,
+          "mode": "list",
+          "value": "beauty_reviews"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [
+            "id"
+          ],
+          "schema": [
+            {
+              "id": "id",
+              "displayName": "id",
+              "required": false,
+              "defaultMatch": true,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "product_no",
+              "displayName": "product_no",
+              "required": true,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "contents",
+              "displayName": "contents",
+              "required": true,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "review_score",
+              "displayName": "review_score",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "registered_at",
+              "displayName": "registered_at",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "dateTime",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "created_at",
+              "displayName": "created_at",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "dateTime",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {
+          "skipOnConflict": true
+        }
+      },
+      "name": "리뷰 저장",
+      "id": "postgres-reviews",
+      "typeVersion": 2.5,
+      "position": [
+        1136,
+        448
+      ],
+      "type": "n8n-nodes-base.postgres",
+      "credentials": {
+        "postgres": {
+          "id": "X8p7g0WwztKPtHo9",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": {
+          "__rl": true,
+          "value": "solar-pro",
+          "mode": "list",
+          "cachedResultName": "solar-pro"
+        },
+        "builtInTools": {},
+        "options": {
+          "baseURL": "https://api.upstage.ai/v1/solar"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1.3,
+      "position": [
+        608,
+        688
+      ],
+      "id": "0039f536-11b3-4db4-a6a4-864784fbf827",
+      "name": "Solar Pro Model",
+      "credentials": {
+        "openAiApi": {
+          "id": "2RzL2fkJyOZXTDyI",
+          "name": "Upstage Solar API"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "제품 추출",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "리뷰 추출",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "제품 추출": {
+      "main": [
+        [
+          {
+            "node": "제품 저장",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "리뷰 추출": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "점수 추출",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ],
+      "ai_languageModel": [
+        []
+      ]
+    },
+    "점수 추출": {
+      "main": [
+        [
+          {
+            "node": "리뷰 저장",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": true,
+  "settings": {
+    "executionOrder": "v1",
+    "callerPolicy": "workflowsFromSameOwner",
+    "availableInMCP": false,
+    "timeSavedMode": "fixed"
+  },
+  "versionId": "28677c2f-98d6-4e9a-8ad8-2cca929a79d0",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "558d88703fb65b2d0e44613bc35916258b0f0bf983c5d4730c00c424b77ca36a"
+  },
+  "id": "teMQVEjQEhuUwHic",
+  "tags": []
+}
